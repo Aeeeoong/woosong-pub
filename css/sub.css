@@ -238,7 +238,6 @@
 
 /* 학사정보_수강소감설문(학생) */
 .surveyWrap {width: 100%; height: 100%; padding-top: 0.35rem; padding-bottom: 1rem;}
-
 .surveyWrap.noData .surveyItem {display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1.5rem; width: 100%; height: 100%; background-color: var(--color-bg-cg2); border-radius: 0.75rem;}
 .surveyWrap.noData .surveyItem img {max-width: 100%; max-height: 100%; object-fit: contain;}
 .surveyWrap.noData .surveyItem p {font-size: 0.8rem; color: var(--color-txt-b7); line-height: 1.4;}
@@ -262,7 +261,6 @@
 .salaryList .innerbox + .innerbox {margin-top: 1.5rem;}
 .salaryList .innerbox > li {display: flex; justify-content: space-between; width: 100%;}
 .salaryList .innerbox > li + li {border-top: 1px solid var(--color-border-gray7);}
-
 .salaryList .innerbox > li.top {padding-bottom: 0.75rem;}
 .salaryList .innerbox > li.top span.total {font-weight: 700; color: var(--color-txt-b7);}
 .salaryList .innerbox > li.top span.total em {font-size: 0.8rem; color: var(--color-main02); margin-right: 0.2rem;}
@@ -279,7 +277,6 @@
 .contactWrap .filterWrap {display: flex; flex-direction: column; gap: 0.4rem; height: 3.2rem; margin-bottom: 0.75rem;}
 .contactWrap .filterWrap .radioWrap {display: flex; gap: 0.75rem; width: 100%;}
 .contactWrap .filterWrap .searchBox {margin: 0;}
-
 .contactWrap .contactList {min-height: calc(100% - 3.2rem - 0.75rem); border-radius: 0.75rem; background-color: var(--color-bg-fff); padding: 0.5rem 1.2rem;}
 .contactWrap .contactList > li {padding: 0.6rem 0;}
 .contactWrap .contactList > li + li {border-top: 1px solid var(--color-border-light);}
@@ -294,6 +291,7 @@
 .contactWrap .contactList .contactInfo > li > .mobileTel {color: var(--color-txt-b7);}
 
 
+
 /* 교직원메뉴_교직원연락처(교수)(교직원) - 로드, 검색결과 없음 */
 .contactWrap:has(.load),
 .contactWrap:has(.no-data) {height: 100%;}
@@ -304,32 +302,36 @@
 .contactWrap .contactList .no-data img {max-width: 96px; max-height: 71px; object-fit: contain;}
 
 
+
 /* 교직원메뉴_교직원연락처(교수)(교직원) - 모달 */
 .contactModal {position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 9999; display: flex; align-items: center; justify-content: center; opacity: 0; visibility: hidden; transition: 0.3s;}
 .contactModal::before {content: ''; display: block; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.7); position: absolute; top: 0; left: 0; z-index: -1;}
+.contactModal .modalWrap {display: flex; flex-direction: column; align-items: flex-end; gap: 0.5rem; position: relative; width: calc(100% - 2.8rem); max-width: 28rem; z-index: 1;}
+.contactModal .modalClose {display: inline-flex; align-items: center; justify-content: center; color: var(--color-txt-fff); font-size: 1.4rem; cursor: pointer; z-index: 2;}
+.contactModal .modalClose i {line-height: 1;}
+.contactModal .modalContent {width: 100%; position: relative; background-color: var(--color-bg-fff); border-radius: 1rem; padding: 1.5rem 1rem; z-index: 0; overflow: hidden;}
+.contactModal .modalContent::after {content: ''; display: block; width: 181px;  height: 54px; background: url('/images/sub/modal_logo.png') no-repeat center center / contain; position: absolute; top: 0; right: 0; z-index: -1;}
+.contactModal .modalContent.headerOnly .modalHeader {padding-bottom: 0;}
+.contactModal .modalHeader {padding-bottom: 0.75rem;}
+.contactModal .modalHeader .modalTitle {font-size: 1.2rem; color: var(--color-txt-b1); font-weight: 700; line-height: 1.4;}
+.contactModal .modalHeader ul {display: flex; flex-wrap: wrap; gap: 0.4rem;}
+.contactModal .modalHeader ul li {font-size: 0.8rem; color: var(--color-txt-b7); font-weight: 500;}
+.contactModal .modalHeader ul li.dept {font-weight: 700;}
+.contactModal .modalBody {padding-top: 0.75rem; border-top: 1px solid var(--color-border-light);}
+.contactModal .modalBody .contactList {display: flex; flex-direction: column; gap: 0.4rem;}
+.contactModal .modalBody .contactList > li {display: flex; justify-content: space-between; align-items: center; gap: 0.4rem;}
+.contactModal .modalBody .contactList > li .tit {width: 2.5rem; color: var(--color-gray); flex-shrink: 0;}
+.contactModal .modalBody .contactList > li p {flex: 1; display: flex; align-items: center; justify-content: space-between; gap: 0.5rem;  font-weight: 500;}
+.contactModal .modalBody .contactList > li p span {color: var(--color-txt-b6); font-weight: 500;}
+.contactModal .modalBody .contactList > li p .img {flex-shrink: 0; width: 1.1rem; height: 1.1rem; display: inline-flex; align-items: center; justify-content: center; border: 1px solid var(--color-border-gray8); border-radius: 0.25rem; overflow: hidden;}
+.contactModal .modalBody .contactList > li p .img img {max-width: 100%; max-height: 100%; object-fit: contain;}
 
 
 
-
-.contactModal .modalWrap {position: relative; width: calc(100% - 2rem); max-width: 28rem; z-index: 1;}
-.contactModal .modalClose {display: inline-flex; align-items: center; justify-content: center; width: 1.2rem; height: 1.2rem; color: var(--color-txt-fff); font-size: 1.5rem; cursor: pointer; z-index: 2;}
-.contactModal .modalContent {position: relative; background-color: var(--color-bg-fff); border-radius: 0.75rem; padding: 1.5rem 1rem;}
-.contactModal .modalHeader {margin-bottom: 1rem; padding-bottom: 0.75rem; border-bottom: 1px solid var(--color-border-light);}
-.contactModal .modalHeader .modalTitle {font-size: 0.9rem; color: var(--color-txt-b2); font-weight: 700; line-height: 1.4; margin: 0 0 0.5rem 0;}
-.contactModal .modalHeader ul {display: flex; flex-wrap: wrap; gap: 0.5rem; list-style: none; padding: 0; margin: 0;}
-.contactModal .modalHeader ul li {font-size: 0.7rem; color: var(--color-txt-b7);}
-.contactModal .modalHeader ul li.dept {color: var(--color-gray); font-weight: 500;}
-.contactModal .modalBody {margin-top: 1rem;}
-.contactModal .modalBody .contactList {list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.75rem;}
-.contactModal .modalBody .contactList > li {display: flex; justify-content: space-between; align-items: center; gap: 1rem;}
-.contactModal .modalBody .contactList > li .tit {font-size: 0.7rem; color: var(--color-txt-b7); font-weight: 500; flex-shrink: 0;}
-.contactModal .modalBody .contactList > li p {display: flex; align-items: center; gap: 0.5rem; margin: 0; flex: 1;}
-.contactModal .modalBody .contactList > li p span {font-size: 0.8rem; color: var(--color-txt-b2); font-weight: 500;}
-.contactModal .modalBody .contactList > li p .img {flex-shrink: 0; width: 1.2rem; height: 1.2rem; display: flex; align-items: center; justify-content: center;}
-.contactModal .modalBody .contactList > li p .img img {width: 100%; height: 100%; object-fit: contain;}
-
-
+/* 교직원메뉴_교직원연락처(교수)(교직원) - 모달 - 표시 */
 .contactModal.show {opacity: 1; visibility: visible;}
+
+
 
 /* 반응형 */
 @media screen and (max-width: 374px) {
@@ -386,4 +388,9 @@
   /* 대학생활_모바일신분증(교수교직원) */
   .idCardWrap.professor .cardInfo .infoBox {top: 50%; left: 17.5%; transform: translateY(-50%);}
   .idCardWrap.professor .cardInfo .infoBox .left {max-width: 7rem;}
+
+
+
+  /* 교직원메뉴_교직원연락처(교수)(교직원) - 모달 */
+  .contactModal .modalBody .contactList > li p .img {display: none;}
 }
