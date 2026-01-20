@@ -70,25 +70,27 @@
 .checkListWrap .checkList li .left {display: flex; align-items: center; gap: 0.5rem; line-height: 1.4;}
 .checkListWrap .checkList li .left .name {font-size: 0.8rem; font-weight: 700; color: #000;}
 .checkListWrap .checkList li .left .studentNumber {font-size: 0.7rem; color: var(--color-txt-b5);}
-.checkListWrap .checkList li .right {display: flex; align-items: center; gap: 0.3rem; font-size: 0.7rem;}
-.checkListWrap .checkList li .right.unCheck {color: var(--color-orange);}
+.checkListWrap .checkList li .right {display: flex; align-items: center; gap: 0.3rem; font-size: 0.7rem; color: var(--color-orange);}
 .checkListWrap .checkList li .right.check {color: var(--color-main02);}
+.checkListWrap .checkList .no-data {display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; text-align: center;}
 
 
 
-/* 메인_등록금고지서(학생) */
+/* ★등록금고지서(학생) */
 .tutationWrap > ul > li + li {margin-top: 0.75rem;}
-.tutationWrap .tut_info > ul > li {display: flex; justify-content: space-between; width: 100%;}
-.tutationWrap .tut_info > ul > li + li {margin-top: 0.75rem;}
-.tutationWrap .tut_info > ul > li.top .tit,
-.tutationWrap .tut_info > ul > li.bottom .subTit {flex-shrink: 0; width: 3.5rem; overflow: hidden; white-space: nowrap;}
-.tutationWrap .tut_info > ul > li.top .total {font-weight: 700; color: var(--color-txt-b7);}
-.tutationWrap .tut_info > ul > li.top .total em {font-size: 1rem; font-weight: 700; line-height: 1.4; color: var(--color-main01); margin-right: 0.2rem;}
-.tutationWrap .tut_info > ul > li.bottom .desc {color: var(--color-txt-b7);}
 
-.tutationWrap .tut_info.type2 > ul > li.top .tit {width: 100%;}
-.tutationWrap .tut_info.type2 > ul > li.bottom .subTit {color: var(--color-txt-b4);}
-.tutationWrap .tut_info.type2 > ul > li.bottom .desc {color: var(--color-txt-b4);}
+.tutationWrap .tut_info > p {display: flex; justify-content: space-between; width: 100%;}
+.tutationWrap .tut_info > p + p {margin-top: 0.75rem;}
+.tutationWrap .tut_info > p.top .tit,
+.tutationWrap .tut_info > p.bottom .subTit {flex-shrink: 0; width: 3.5rem; overflow: hidden; white-space: nowrap;}
+.tutationWrap .tut_info > p.top {align-items: center;}
+.tutationWrap .tut_info > p.top .total {font-weight: 700; color: var(--color-txt-b7);}
+.tutationWrap .tut_info > p.top .total em {font-size: 1rem; font-weight: 700; line-height: 1.4; color: var(--color-main01); margin-right: 0.2rem;}
+.tutationWrap .tut_info > p.bottom .desc {color: var(--color-txt-b7); text-align: right;}
+
+.tutationWrap .tut_info.type2 > p.top .tit {width: 100%;}
+.tutationWrap .tut_info.type2 > p.bottom .subTit {color: var(--color-txt-b4);}
+.tutationWrap .tut_info.type2 > p.bottom .desc {color: var(--color-txt-b4);}
 
 .tutationWrap .tut_info > dl > dt {font-size: 0.8rem; font-weight: 700; color: var(--color-txt-b3); line-height: 1.4; padding-bottom: 0.7rem; border-bottom: 1px solid var(--color-border-gray8);}
 .tutationWrap .tut_info > dl > dd {margin-top: 0.75rem;}
@@ -280,15 +282,16 @@
 .contactWrap .contactList {min-height: calc(100% - 3.2rem - 0.75rem); border-radius: 0.75rem; background-color: var(--color-bg-fff); padding: 0.5rem 1.2rem;}
 .contactWrap .contactList > li {padding: 0.6rem 0;}
 .contactWrap .contactList > li + li {border-top: 1px solid var(--color-border-light);}
-.contactWrap .contactList > li > a {display: block; text-decoration: none; color: inherit; cursor: pointer;}
-.contactWrap .contactList .contactInfo {display: flex; flex-direction: column; gap: 0.15rem;}
-.contactWrap .contactList .contactInfo > li {display: flex; justify-content: space-between; gap: 1rem; width: 100%;}
-.contactWrap .contactList .contactInfo > li > .dept {font-size: 0.6rem; color: var(--color-gray); font-weight: 500;}
-.contactWrap .contactList .contactInfo > li > .name {font-size: 0.8rem; color: var(--color-txt-b2); font-weight: 700; line-height: 1.4;}
-.contactWrap .contactList .contactInfo > li > .name span {font-weight: 500; margin-left: 0.2rem;}
-.contactWrap .contactList .contactInfo > li > .officeTel {color: var(--color-navy); font-weight: 700;}
-.contactWrap .contactList .contactInfo > li > .email,
-.contactWrap .contactList .contactInfo > li > .mobileTel {color: var(--color-txt-b7);}
+.contactWrap .contactList .contactInfo {display: flex; flex-direction: column; gap: 0.15rem; cursor: pointer;}
+.contactWrap .contactList .contactInfo > .dept {font-size: 0.6rem; color: var(--color-gray); font-weight: 500;}
+.contactWrap .contactList .contactInfo .infoWrap {display: flex; justify-content: space-between; column-gap: 0.5rem;}
+.contactWrap .contactList .contactInfo .infoWrap .left,
+.contactWrap .contactList .contactInfo .infoWrap .right {display: flex; flex-direction: column; justify-content: flex-end;}
+.contactWrap .contactList .contactInfo .infoWrap .left > .name {font-size: 0.8rem; color: var(--color-txt-b2); font-weight: 700; line-height: 1.4;}
+.contactWrap .contactList .contactInfo .infoWrap .left > .name span {font-weight: 500; margin-left: 0.2rem;}
+.contactWrap .contactList .contactInfo .infoWrap .right > .officeTel {color: var(--color-navy); font-weight: 700;}
+.contactWrap .contactList .contactInfo .infoWrap .left > .email,
+.contactWrap .contactList .contactInfo .infoWrap .right > .mobileTel {color: var(--color-txt-b7);}
 
 
 
@@ -315,9 +318,8 @@
 .contactModal .modalContent.headerOnly .modalHeader {padding-bottom: 0;}
 .contactModal .modalHeader {padding-bottom: 0.75rem;}
 .contactModal .modalHeader .modalTitle {font-size: 1.2rem; color: var(--color-txt-b1); font-weight: 700; line-height: 1.4;}
-.contactModal .modalHeader ul {display: flex; flex-wrap: wrap; gap: 0.4rem;}
-.contactModal .modalHeader ul li {font-size: 0.8rem; color: var(--color-txt-b7); font-weight: 500;}
-.contactModal .modalHeader ul li.dept {font-weight: 700;}
+.contactModal .modalHeader .modalSubTitle {display: flex; flex-wrap: wrap; gap: 0.4rem; font-size: 0.8rem; font-weight: 500; color: var(--color-txt-b7);}
+.contactModal .modalHeader .modalSubTitle strong {font-weight: 700;}
 .contactModal .modalBody {padding-top: 0.75rem; border-top: 1px solid var(--color-border-light);}
 .contactModal .modalBody .contactList {display: flex; flex-direction: column; gap: 0.4rem;}
 .contactModal .modalBody .contactList > li {display: flex; justify-content: space-between; align-items: center; gap: 0.4rem;}
@@ -334,25 +336,28 @@
 
 
 
-/* 교직원메뉴_지도학생목록(교수), 대학생활_강의정보-[tab]수업시간표(교수) - [공통] 리스트*/
+/* 교직원메뉴_지도학생목록(교수), 대학생활_강의정보-[tab]강의목록_상세(교수) - [공통] 리스트*/
 .studentWrap {padding-bottom: 1rem; min-height: 100%;}
-.studentWrap .studentList {min-height: calc(100% - 1.75rem - 0.75rem - 0.4rem); border-radius: 0.5rem; background-color: var(--color-bg-fff); padding: 0.6rem 1.2rem;}
-.studentWrap .studentList > li {display: flex; column-gap: 0.75rem; padding: 0.5rem 0;}
-.studentWrap .studentList > li:not(.controlWrap) + li {border-top: 1px solid var(--color-border-light);}
-.studentWrap .studentList > li:not(.controlWrap) .chkBox {padding-left: 0.8rem;}
-.studentWrap .studentList .controlWrap {display: flex; justify-content: space-between; align-items: flex-start; padding-bottom: 0.6rem; padding-top: 0; border-bottom: 1px dashed var(--color-border-light); margin-bottom: 0.25rem;}
-.studentWrap .studentList .controlWrap > .chkBox {flex-shrink: 0; position: relative; top: 0.1rem;}
-.studentWrap .studentList .controlWrap > button {flex-shrink: 0; width: 3.65rem;}
-.studentWrap .studentList .advisorInfo {display: flex; flex-direction: column; gap: 0.1rem; width: 100%;}
-.studentWrap .studentList .advisorInfo > li {display: flex; justify-content: space-between; gap: 0.15rem; width: 100%;}
-.studentWrap .studentList .advisorInfo > li > .name {font-size: 0.8rem; color: var(--color-txt-b2); font-weight: 700; line-height: 1.4;}
-.studentWrap .studentList .advisorInfo > li > .dept {font-size: 0.6rem; color: var(--color-gray); font-weight: 500;}
 
-.studentWrap .studentList .advisorInfo .infoList > ul {display: flex; column-gap: 0.75rem; width: 100%;}
-.studentWrap .studentList .advisorInfo .infoList > ul > li {display: flex; gap: 0.15rem; color: var(--color-txt-b6);}
-.studentWrap .studentList .advisorInfo .infoList > ul > li > .tit {flex-shrink: 0; font-weight: 700;}
+.studentWrap .studentListWrap {min-height: calc(100% - 1.75rem - 0.75rem - 0.4rem); border-radius: 0.5rem; background-color: var(--color-bg-fff); padding: 0.6rem 1.2rem;}
+.studentWrap .studentListWrap .controlWrap {display: flex; justify-content: space-between; align-items: flex-start; padding-bottom: 0.6rem; padding-top: 0; border-bottom: 1px dashed var(--color-border-light); margin-bottom: 0.25rem;}
+.studentWrap .studentListWrap .controlWrap > .chkBox {flex-shrink: 0; position: relative; top: 0.1rem;}
+.studentWrap .studentListWrap .controlWrap > button {flex-shrink: 0; width: 3.65rem;}
 
-.studentWrap .studentList .no-data {display: flex; flex-direction: column; align-items: center; justify-content: center; width: 100%; height: 100%; text-align: center; color: var(--color-txt-b7);}
+
+
+
+.studentWrap .studentListWrap .studentList > li {display: flex; column-gap: 0.75rem; padding: 0.5rem 0;}
+.studentWrap .studentListWrap .studentList > li + li {border-top: 1px solid var(--color-border-light);}
+.studentWrap .studentListWrap .studentList > li .chkBox {padding-left: 0.8rem; top: 0.1rem;}
+.studentWrap .studentListWrap .studentList .advisorInfo {display: flex; flex-direction: column; gap: 0.1rem; width: 100%;}
+.studentWrap .studentListWrap .studentList .advisorInfo .name {font-size: 0.8rem; color: var(--color-txt-b2); font-weight: 700; line-height: 1.4;}
+.studentWrap .studentListWrap .studentList .advisorInfo .dept {font-size: 0.6rem; color: var(--color-gray); font-weight: 500;}
+.studentWrap .studentListWrap .studentList .advisorInfo .infoList  {display: flex; column-gap: 0.75rem; width: 100%;}
+.studentWrap .studentListWrap .studentList .advisorInfo .infoList > li {display: flex; gap: 0.15rem; color: var(--color-txt-b6);}
+.studentWrap .studentListWrap .studentList .advisorInfo .infoList > li > .tit {flex-shrink: 0; font-weight: 700;}
+
+.studentWrap .studentListWrap .studentList .no-data {display: flex; flex-direction: column; align-items: center; justify-content: center; width: 100%; height: 100%; text-align: center; color: var(--color-txt-b7);}
 
 
 
@@ -407,8 +412,8 @@
 
 
   /* 교직원메뉴_지도학생목록(교수) */
-  .studentWrap .studentList .advisorInfo .infoList > ul {flex-wrap: wrap; row-gap: 0.1rem;}
-  .studentWrap .studentList .advisorInfo .infoList > ul > li:first-child {width: 100%;}
+  .studentWrap .studentListWrap .studentList .advisorInfo .infoList {flex-wrap: wrap; row-gap: 0.1rem;}
+  .studentWrap .studentListWrap .studentList .advisorInfo .infoList > li:first-child {width: 100%;}
 }
 
 
@@ -449,4 +454,8 @@
 
   /* 교직원메뉴_교직원연락처(교수)(교직원) - 모달 */
   .contactModal .modalBody .contactList > li p .img {display: none;}
+
+
+  /* 교직원메뉴_교직원연락처(교수)(교직원) */
+  .contactWrap .contactList .contactInfo .infoWrap {flex-direction: column; row-gap: 0;}
 }

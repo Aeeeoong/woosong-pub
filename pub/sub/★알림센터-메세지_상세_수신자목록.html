@@ -37,35 +37,33 @@
           [checkCount] 수신확인 수와
           [totalCount] 총 수신자 수를 표시해주세요.
         -->
-        <p>
-          수신확인: 
-          <span class="checkCount">1</span>
-          /
-          <span class="totalCount">2</span>
-        </p>
+        <p>수신확인: <span id="checkCount">1</span>/<span id="totalCount">2</span></p>
         <ul class="checkList">
           <li>
             <p class="left">
               <span class="name">홍길동</span>
               <span class="studentNumber">202460715</span>
             </p>
-            <!-- ★개발 : [ 미확인 ] 상태일 때 p에 unCheck 클래스 추가해주세요. -->
-            <p class="right unCheck">
-              <i class="ri-mail-line" aria-hidden="true"></i>
-              미확인
-            </p>
+            <p class="right"><i class="ri-mail-line" aria-hidden="true"></i>미확인</p>
+            <!-- ★개발 : [ 확인 ] 상태일 때 아래 코드를 출력해주시면 됩니다.
+            
+              <p class="right check"><i class="ri-mail-open-line" aria-hidden="true"></i>확인</p>
+            -->
           </li>
           <li>
             <p class="left">
               <span class="name">홍길동</span>
               <span class="studentNumber">202460715</span>
             </p>
-            <!-- ★개발 : [ 확인 ] 상태일 때 p에 check 클래스 추가해주세요. -->
-            <p class="right check">
-              <i class="ri-mail-open-line" aria-hidden="true"></i>
-              확인
-            </p>
+            <p class="right check"><i class="ri-mail-open-line" aria-hidden="true"></i>확인</p>
           </li>
+
+          <!-- ★개발 : 데이터가 없을 경우 아래 코드만 출력해주시면 됩니다.
+          
+            <li class="no-data">
+              <p>데이터가 없습니다.</p>
+            </li>
+          -->
         </ul>
       </div>
     </main>
@@ -83,18 +81,21 @@
       <ul class="iconWrap">
         <li>
           <a href="#">
-            <!-- ★개발: 각 페이지에 맞는 이미지를 출력하시면 됩니다.
-            
-              <img src="../../images/common/ID.png" alt="" aria-hidden="true" class="icn"/>
+            <!--
+              ★개발: '모바일 신분증' 메뉴일 시 아래 이미지 출력
+              <img src="../../images/common/ID_ON.png" alt="" aria-hidden="true" class="icn"/>
             -->
-            <img src="../../images/common/ID_ON.png" alt="" aria-hidden="true" class="icn"/>
+            <img src="../../images/common/ID.png" alt="" aria-hidden="true" class="icn"/>
             <span class="txt">모바일 신분증</span>
           </a>
         </li>
         <li>
           <a href="#">
+            <!--
+              ★개발: '학사일정' 메뉴일 시 아래 이미지 출력
+              <img src="../../images/common/schedule_ON.png" alt="" aria-hidden="true" class="icn"/>
+            -->
             <img src="../../images/common/schedule.png" alt="" aria-hidden="true" class="icn"/>
-            <!-- <img src="../../images/common/schedule_ON.png" alt="" aria-hidden="true" class="icn"/> -->
             <span class="txt">학사일정</span>
           </a>
         </li>
@@ -105,15 +106,21 @@
       <ul class="iconWrap">
         <li>
           <a href="#">
+            <!--
+              ★개발: '식단안내' 메뉴일 시 아래 이미지 출력
+              <img src="../../images/common/meal_ON.png" alt="" aria-hidden="true" class="icn"/>
+            -->
             <img src="../../images/common/meal.png" alt="" aria-hidden="true" class="icn"/>
-            <!-- <img src="../../images/common/meal_ON.png" alt="" aria-hidden="true" class="icn"/> -->
             <span class="txt">식단안내</span>
           </a>
         </li>
         <li>
           <a href="#">
+            <!--
+              ★개발: '공지사항' 메뉴일 시 아래 이미지 출력
+              <img src="../../images/common/notice_ON.png" alt="" aria-hidden="true" class="icn"/>
+            -->
             <img src="../../images/common/notice.png" alt="" aria-hidden="true" class="icn"/>
-            <!-- <img src="../../images/common/notice_ON.png" alt="" aria-hidden="true" class="icn"/> -->
             <span class="txt">공지사항</span>
           </a>
         </li>

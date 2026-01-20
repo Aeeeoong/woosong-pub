@@ -260,8 +260,8 @@ div[class^="tab_st"] li.w100 {width: 100% !important;}
 .tab_st2 li.on a {font-size: 0.7rem; font-weight: 700; color: var(--color-txt-b3); background: var(--color-bg-fff); box-shadow: 0 0 3px rgba(0,0,0,0.1); z-index: 1;}
 
 /* 탭 : 스크롤 처리 */
-.tab_st1.scroll {overflow-x: auto;}
-.tab_st2.scroll ul {overflow-x: auto;}
+.tab_st1.scroll {overflow-x: auto; width: calc(100% + var(--paddingLeftRight) * 2); padding-left: var(--paddingLeftRight); padding-right: var(--paddingLeftRight); margin-left: calc(var(--paddingLeftRight) * -1); margin-right: calc(var(--paddingLeftRight) * -1);}
+.tab_st2.scroll ul {overflow-x: auto; width: calc(100% + var(--paddingLeftRight) * 2); padding-left: var(--paddingLeftRight); padding-right: var(--paddingLeftRight); margin-left: calc(var(--paddingLeftRight) * -1); margin-right: calc(var(--paddingLeftRight) * -1);} 
 .tab_st1.scroll::-webkit-scrollbar,
 .tab_st2.scroll ul::-webkit-scrollbar {display: none;}
 div[class^="tab_st"].scroll ul {flex-wrap: nowrap;}
@@ -572,6 +572,11 @@ dl.accordion dd ul li {display: flex; justify-content: space-between; gap: 0.5re
 dl.accordion dd ul li + li {padding-top: 0.5rem;}
 dl.accordion dd ul li .tit {max-width: 4rem; font-weight: 500; color: var(--color-txt-b6);}
 dl.accordion dd ul li .desc {font-weight: 400; color: var(--color-txt-b7); text-align: right;}
+
+dl.accordion dd ul li.w100 {flex-wrap: wrap; gap: 0.15rem;}
+dl.accordion dd ul li.w100 .tit,
+dl.accordion dd ul li.w100 .desc {width: 100%; max-width: 100%; text-align: left; line-height: 1.2;}
+
 
 /* 아코디언 타입2 */
 dl.accordion.type2 dd {background-color: var(--color-bg-fff); border-radius: 0;}

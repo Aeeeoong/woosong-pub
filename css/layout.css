@@ -71,6 +71,9 @@
   /* 기타 컬러 */
   --color-gray-light: #E5E5E5;
   --color-gray-light2: #E7E7E7;
+
+  /* 레이아웃 좌우 패딩 */
+  --paddingLeftRight: 0.75rem;
 }
 
 
@@ -122,7 +125,7 @@ header.menuLayout > button img {width: 100%; height: 100%; object-fit: contain;}
 
 
 /* main */
-main {width: 100%; flex: 1; overflow-y: auto; padding: 2.75rem 0.75rem; padding-bottom:  var(--paddingBottom) !important;
+main {width: 100%; flex: 1; overflow-y: auto; padding: 2.75rem var(--paddingLeftRight); padding-bottom:  var(--paddingBottom) !important;
 
   --paddingBottom: 4.2rem;
 }
@@ -130,7 +133,7 @@ main {width: 100%; flex: 1; overflow-y: auto; padding: 2.75rem 0.75rem; padding-
 
 
 /* main - subLayout */
-main.subLayout {padding: 2.5rem 0.75rem;}
+main.subLayout {padding: 2.5rem var(--paddingLeftRight);}
 main.subLayout.idCardPage {padding: 0;}
 main.subLayout.nonePBottom {
   
@@ -142,7 +145,7 @@ main.subLayout.nonePBottom {
 
 /* main - subLayout - tablePage */
 main.subLayout.tablePage {display: flex; flex-direction: column; padding: 0; padding-bottom: 2.5rem;}
-main.subLayout.tablePage .innerLayout {flex-shrink: 0; padding: 2.5rem 0.75rem 0.65rem; background-color: var(--color-bg-cg);}
+main.subLayout.tablePage .innerLayout {flex-shrink: 0; padding: 2.5rem var(--paddingLeftRight) 0.65rem; background-color: var(--color-bg-cg);}
 main.subLayout.tablePage .tableWrap:last-child {flex: 1;}
 
 
