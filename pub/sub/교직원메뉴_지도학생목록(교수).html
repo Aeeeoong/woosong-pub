@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+
+  <!-- css -->
+  <link rel="stylesheet" href="../../css/basic.css">
+  <link rel="stylesheet" href="../../css/layout.css">
+  <link rel="stylesheet" href="../../css/con_com.css">
+  <link rel="stylesheet" href="../../css/sub.css">
+
+  
+  <!-- js -->
+  <script src="../../js/jquery-3.7.1.min.js"></script>
+  <script type="text/javascript" src="../../js/script.js"></script>
+
+
+  <!-- font -->
+  <link rel="stylesheet" href="../../font/Pretendard/fonts.css" media="all">
+  <link rel="stylesheet" href="../../font/Remixicon/remixicon.css" media="all">
+
+</head>
+<body data-header-scroll="true">
+  <div id="wrap">
+    <header class="subLayout">
+      <button type="button" aria-label="뒤로 가기">
+        <i class="ri-arrow-left-s-line" aria-hidden="true"></i>
+      </button>
+      <h1 class="tit1">지도학생목록</h1>
+    </header>
+    <main class="subLayout">
+      <div class="studentWrap">
+        <div class="searchBox onlyInput">
+          <div class="input_wrap">
+            <label for="search_input" class="hid">검색어 입력</label>
+            <input type="text" id="search_input" placeholder="검색어를 입력하세요">
+          </div>
+          <button type="button" class="btn_search" aria-label="검색"></button>
+        </div>
+        <ul class="studentList">
+          <!-- ★개발:
+            검색결과가 없거나, 데이터가 없을 경우 아래의 li만 출력해주시면 됩니다.
+
+            <li class="no-data">
+              <p>조회된 결과가 없습니다.</p>
+            </li>
+            -->
+          <li class="controlWrap">
+            <div class="chkBox">
+              <input type="checkbox" id="chkAll" class="mini">
+              <label for="chkAll">전체선택</label>
+            </div>
+            <button type="button" class="btn_main01 mini">
+              메세지 전송
+            </button>
+          </li>
+          <li>
+            <div class="chkBox">
+              <input type="checkbox" id="advisor_checkbox01" class="mini">
+              <label for="advisor_checkbox01"></label>
+            </div>
+            <ul class="advisorInfo">
+              <li>
+                <p class="name">김조용</p>
+              </li>
+              <li>
+                <p class="dept">글로벌외식창업전공</p>
+              </li>
+              <li class="infoList">
+                <ul>
+                  <li>
+                    <p class="tit">학번</p>
+                    <p class="txt">202211007</p>
+                  </li>
+                  <li>
+                    <p class="tit">학년</p>
+                    <p class="txt">2학년</p>
+                  </li>
+                  <li>
+                    <p class="tit">학적</p>
+                    <p class="txt">재학</p>
+                  </li>
+                </ul>
+            </ul>
+          </li>
+          <li>
+            <div class="chkBox">
+              <input type="checkbox" id="advisor_checkbox01" class="mini">
+              <label for="advisor_checkbox01"></label>
+            </div>
+            <ul class="advisorInfo">
+              <li>
+                <p class="name">신혜원</p>
+              </li>
+              <li>
+                <p class="dept">글로벌외식창업전공</p>
+              </li>
+              <li class="infoList">
+                <ul>
+                  <li>
+                    <p class="tit">학번</p>
+                    <p class="txt">202211007</p>
+                  </li>
+                  <li>
+                    <p class="tit">학년</p>
+                    <p class="txt">2학년</p>
+                  </li>
+                  <li>
+                    <p class="tit">학적</p>
+                    <p class="txt">재학</p>
+                  </li>
+                </ul>
+            </ul>
+          </li>
+          <li>
+            <div class="chkBox">
+              <input type="checkbox" id="advisor_checkbox01" class="mini">
+              <label for="advisor_checkbox01"></label>
+            </div>
+            <ul class="advisorInfo">
+              <li>
+                <p class="name">이시아</p>
+              </li>
+              <li>
+                <p class="dept">글로벌외식창업전공</p>
+              </li>
+              <li class="infoList">
+                <ul>
+                  <li>
+                    <p class="tit">학번</p>
+                    <p class="txt">202211007</p>
+                  </li>
+                  <li>
+                    <p class="tit">학년</p>
+                    <p class="txt">2학년</p>
+                  </li>
+                  <li>
+                    <p class="tit">학적</p>
+                    <p class="txt">재학</p>
+                  </li>
+                </ul>
+            </ul>
+          </li>
+          <li>
+            <div class="chkBox">
+              <input type="checkbox" id="advisor_checkbox01" class="mini">
+              <label for="advisor_checkbox01"></label>
+            </div>
+            <ul class="advisorInfo">
+              <li>
+                <p class="name">임종진</p>
+              </li>
+              <li>
+                <p class="dept">글로벌외식창업전공</p>
+              </li>
+              <li class="infoList">
+                <ul>
+                  <li>
+                    <p class="tit">학번</p>
+                    <p class="txt">202211007</p>
+                  </li>
+                  <li>
+                    <p class="tit">학년</p>
+                    <p class="txt">2학년</p>
+                  </li>
+                  <li>
+                    <p class="tit">학적</p>
+                    <p class="txt">재학</p>
+                  </li>
+                </ul>
+            </ul>
+          </li>
+          <li>
+            <div class="chkBox">
+              <input type="checkbox" id="advisor_checkbox01" class="mini">
+              <label for="advisor_checkbox01"></label>
+            </div>
+            <ul class="advisorInfo">
+              <li>
+                <p class="name">Vinogradova Lebedeva Anna</p>
+              </li>
+              <li>
+                <p class="dept">글로벌외식창업전공</p>
+              </li>
+              <li class="infoList">
+                <ul>
+                  <li>
+                    <p class="tit">학번</p>
+                    <p class="txt">202211007</p>
+                  </li>
+                  <li>
+                    <p class="tit">학년</p>
+                    <p class="txt">2학년</p>
+                  </li>
+                  <li>
+                    <p class="tit">학적</p>
+                    <p class="txt">재학</p>
+                  </li>
+                </ul>
+            </ul>
+          </li>
+          <li>
+            <div class="chkBox">
+              <input type="checkbox" id="advisor_checkbox01" class="mini">
+              <label for="advisor_checkbox01"></label>
+            </div>
+            <ul class="advisorInfo">
+              <li>
+                <p class="name">정지원</p>
+              </li>
+              <li>
+                <p class="dept">글로벌외식창업전공</p>
+              </li>
+              <li class="infoList">
+                <ul>
+                  <li>
+                    <p class="tit">학번</p>
+                    <p class="txt">202211007</p>
+                  </li>
+                  <li>
+                    <p class="tit">학년</p>
+                    <p class="txt">2학년</p>
+                  </li>
+                  <li>
+                    <p class="tit">학적</p>
+                    <p class="txt">재학</p>
+                  </li>
+                </ul>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </main>  
+    <!--
+      ★ 개발
+        : 특정 페이지(로그인 페이지, 알림 페이지, 메뉴페이지, 게시판-게시물 페이지) 제외 공통 영역입니다.
+        : 혹시나 싶어 필요한 html마다 모두 넣어두었으니, 참고 부탁드립니다.
+    -->
+    <div id="bottomNavigation">
+      <div class="bg">
+        <span class="circleBoxShadow"></span>
+        <span class="rectangle"></span>
+        <span class="circleBorderDelete"></span>
+      </div>
+      <ul class="iconWrap">
+        <li>
+          <a href="#">
+            <!-- ★개발: 각 페이지에 맞는 이미지를 출력하시면 됩니다.
+            
+              <img src="../../images/common/ID.png" alt="" aria-hidden="true" class="icn"/>
+            -->
+            <img src="../../images/common/ID_ON.png" alt="" aria-hidden="true" class="icn"/>
+            <span class="txt">모바일 신분증</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="../../images/common/schedule.png" alt="" aria-hidden="true" class="icn"/>
+            <!-- <img src="../../images/common/schedule_ON.png" alt="" aria-hidden="true" class="icn"/> -->
+            <span class="txt">학사일정</span>
+          </a>
+        </li>
+      </ul>
+      <a href="#" class="centerIcon" aria-label="홈">
+        <img src="../../images/common/home.png" alt="" aria-hidden="true"/>
+      </a>
+      <ul class="iconWrap">
+        <li>
+          <a href="#">
+            <img src="../../images/common/meal.png" alt="" aria-hidden="true" class="icn"/>
+            <!-- <img src="../../images/common/meal_ON.png" alt="" aria-hidden="true" class="icn"/> -->
+            <span class="txt">식단안내</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="../../images/common/notice.png" alt="" aria-hidden="true" class="icn"/>
+            <!-- <img src="../../images/common/notice_ON.png" alt="" aria-hidden="true" class="icn"/> -->
+            <span class="txt">공지사항</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>

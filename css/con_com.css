@@ -1,7 +1,7 @@
 /* common form */
 ::placeholder,
 ::-webkit-input-placeholder,
-::-ms-input-placeholder {font-weight: 400; color: var(--color-txt-b3);}
+::-ms-input-placeholder {font-weight: 400 !important; color: var(--color-txt-g60);}
 
 /* label */
 label { vertical-align: middle;}
@@ -278,7 +278,7 @@ div[class^="tab_st"].scroll ul {flex-wrap: nowrap;}
 .box_st1 {background: var(--color-bg-fff);}
 .box_st1.type2 {padding: 1rem;}
 .box_st2 {background: var(--color-light-blue); padding: 0.75rem;}
-.box_st3 {background: var(--color-border);}
+.box_st3 {background: var(--color-bg-cg2); padding: 0.75rem 1rem;}
 
 /* 박스 : no-data */
 [class^="box_st"].no-data {text-align: center;}
@@ -332,7 +332,7 @@ div[class^="tab_st"].scroll ul {flex-wrap: nowrap;}
 
 .btn_main01 {color: var(--color-txt-fff); background: var(--color-main02);}
 .btn_sub01 {color: var(--color-txt-fff); background: var(--color-green);}
-.btn_sub02 {color: var(--color-txt-b7); background: var(--color-bg-fff); border: 1px solid var(--color-txt-g40);}
+.btn_sub02 {color: var(--color-txt-b7); background: var(--color-bg-fff); border: 1px solid var(--color-txt-g30);}
 .btn_main01:hover,
 .btn_main01:focus {background: var(--color-bg-fff); color: var(--color-main02); border: 1px solid var(--color-main02)}
 .btn_sub01:hover,
@@ -342,11 +342,11 @@ div[class^="tab_st"].scroll ul {flex-wrap: nowrap;}
 
 /* 버튼 : small 버튼 */
 a[class^="btn_"].small,
-button[class^="btn_"].small {padding: 0.3rem 1rem; font-size: 0.7rem; min-width: 5.45rem;}
+button[class^="btn_"].small {padding: 0.3rem 0.9rem; font-size: 0.7rem; min-width: 5.45rem;}
 
 /* 버튼 : mini 버튼 */
 a[class^="btn_"].mini,
-button[class^="btn_"].mini {padding: 0.1rem 0.5rem; font-size: 0.6rem; border-radius: 0.15rem; min-width: 2.75rem;}
+button[class^="btn_"].mini {padding: 0.1rem 0.4rem; font-size: 0.6rem; border-radius: 0.15rem; min-width: 2.75rem;}
 
 /* 버튼 : large 버튼 */
 a[class^="btn_"].large,
@@ -398,6 +398,16 @@ input[type^='text']:focus,
 input[type^='text']:active {outline: 1px solid var(--color-main01) !important; background-color: #fff !important;}
 input.border_none {border: none !important; background-color: var(--color-bg-cg) !important;}
 
+/* input small */
+select.small, input:not(input[type^='checkbox']).small {height: 2.1rem; line-height: 2.1rem; min-width: auto; padding: 0 1rem;}
+
+input[type^='text']::placeholder {color: var(--color-gray); opacity: 1;}
+input[type^='text']::-webkit-input-placeholder {color: var(--color-gray);}
+input[type^='text']::-moz-placeholder {color: var(--color-gray); opacity: 1;}
+input[type^='text']:-ms-input-placeholder {color: var(--color-gray);}
+input[type^='text']::-ms-input-placeholder {color: var(--color-gray);}
+
+
 /* 셀렉트 스타일 */
 select {min-width: 13.25rem; height: 2.1rem; line-height: 2.1rem; padding: 0 1.8rem 0 1rem; -o-appearance: none; -webkit-appearance: none; -moz-appearance: none; appearance: none; background-color: var(--color-bg-fff); background-image: url(../images/common/arrow_down.png); background-repeat: no-repeat; background-position: right 0.85rem center; }
 select.small {min-width: 5rem; height: 1.75rem; line-height: 1.75rem; padding: 0 1.5rem 0 0.75rem; background-position: right 0.45rem center;}
@@ -434,7 +444,7 @@ ul[class^='chk'].round > li input[type^='checkbox']:checked + label::before { bo
 
 /* 체크박스 미니 사이즈 */
 .chkBox:has(input[type^='checkbox'].mini) {height: 0.8rem; padding-left: 1.1rem;}
-.chkBox input[type^='checkbox'].mini + label {font-weight: 400; color: var(--color-txt-b7);} 
+.chkBox input[type^='checkbox'].mini + label {font-weight: 500; color: var(--color-txt-b7);} 
 .chkBox input[type^='checkbox'].mini + label::before {width: 0.8rem; height: 0.8rem; font-size: 0.5rem;}
 
 
@@ -482,6 +492,18 @@ input[type="date"]::-webkit-calendar-picker-indicator{ opacity:0; z-index: 1; cu
 
 .searchBox.onlyInput {margin: 0.4rem 0 0.75rem; border-radius: 0.25rem;}
 .searchBox.onlyInput .input_wrap {padding: 0; padding-right: 0.5rem;}
+
+/* textarea */
+textarea {display: block; width: 100%; border-radius: 0.25rem; border: 1px solid var(--color-txt-g20); padding: 0.65rem 1rem; color: var(--color-txt-b6); min-height: 6.8rem; resize: none;}
+textarea::placeholder {color: var(--color-gray); opacity: 1;}  
+textarea::-webkit-input-placeholder {color: var(--color-gray);}
+textarea::-moz-placeholder {color: var(--color-gray); opacity: 1;}
+textarea:-ms-input-placeholder {color: var(--color-gray);}
+textarea::-ms-input-placeholder {color: var(--color-gray);}
+
+
+textarea:focus,
+textarea:active {outline: 1px solid var(--color-main01) !important; background-color: #fff !important;}
 
 
 

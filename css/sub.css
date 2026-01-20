@@ -306,10 +306,11 @@
 /* 교직원메뉴_교직원연락처(교수)(교직원) - 모달 */
 .contactModal {position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 9999; display: flex; align-items: center; justify-content: center; opacity: 0; visibility: hidden; transition: 0.3s;}
 .contactModal::before {content: ''; display: block; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.7); position: absolute; top: 0; left: 0; z-index: -1;}
-.contactModal .modalWrap {display: flex; flex-direction: column; align-items: flex-end; gap: 0.5rem; position: relative; width: calc(100% - 2.8rem); max-width: 28rem; z-index: 1;}
+.contactModal .modalWrap {display: flex; flex-direction: column; align-items: flex-end; gap: 0.5rem; position: relative; width: calc(100% - 2.8rem); max-width: 28rem; z-index: 1; }
 .contactModal .modalClose {display: inline-flex; align-items: center; justify-content: center; color: var(--color-txt-fff); font-size: 1.4rem; cursor: pointer; z-index: 2;}
 .contactModal .modalClose i {line-height: 1;}
-.contactModal .modalContent {width: 100%; position: relative; background-color: var(--color-bg-fff); border-radius: 1rem; padding: 1.5rem 1rem; z-index: 0; overflow: hidden;}
+.contactModal .modalContent {width: 100%; max-height: 90vh; overflow-y: auto; position: relative; background-color: var(--color-bg-fff); border-radius: 1rem; padding: 1.5rem 1rem; z-index: 0; scrollbar-width: none; -ms-overflow-style: none;}
+.contactModal .modalContent::-webkit-scrollbar {display: none;}
 .contactModal .modalContent::after {content: ''; display: block; width: 181px;  height: 54px; background: url('/images/sub/modal_logo.png') no-repeat center center / contain; position: absolute; top: 0; right: 0; z-index: -1;}
 .contactModal .modalContent.headerOnly .modalHeader {padding-bottom: 0;}
 .contactModal .modalHeader {padding-bottom: 0.75rem;}
@@ -333,6 +334,55 @@
 
 
 
+/* 교직원메뉴_지도학생목록(교수), 대학생활_강의정보-[tab]수업시간표(교수) - [공통] 리스트*/
+.studentWrap {padding-bottom: 1rem; min-height: 100%;}
+.studentWrap .studentList {min-height: calc(100% - 1.75rem - 0.75rem - 0.4rem); border-radius: 0.5rem; background-color: var(--color-bg-fff); padding: 0.6rem 1.2rem;}
+.studentWrap .studentList > li {display: flex; column-gap: 0.75rem; padding: 0.5rem 0;}
+.studentWrap .studentList > li:not(.controlWrap) + li {border-top: 1px solid var(--color-border-light);}
+.studentWrap .studentList > li:not(.controlWrap) .chkBox {padding-left: 0.8rem;}
+.studentWrap .studentList .controlWrap {display: flex; justify-content: space-between; align-items: flex-start; padding-bottom: 0.6rem; padding-top: 0; border-bottom: 1px dashed var(--color-border-light); margin-bottom: 0.25rem;}
+.studentWrap .studentList .controlWrap > .chkBox {flex-shrink: 0; position: relative; top: 0.1rem;}
+.studentWrap .studentList .controlWrap > button {flex-shrink: 0; width: 3.65rem;}
+.studentWrap .studentList .advisorInfo {display: flex; flex-direction: column; gap: 0.1rem; width: 100%;}
+.studentWrap .studentList .advisorInfo > li {display: flex; justify-content: space-between; gap: 0.15rem; width: 100%;}
+.studentWrap .studentList .advisorInfo > li > .name {font-size: 0.8rem; color: var(--color-txt-b2); font-weight: 700; line-height: 1.4;}
+.studentWrap .studentList .advisorInfo > li > .dept {font-size: 0.6rem; color: var(--color-gray); font-weight: 500;}
+
+.studentWrap .studentList .advisorInfo .infoList > ul {display: flex; column-gap: 0.75rem; width: 100%;}
+.studentWrap .studentList .advisorInfo .infoList > ul > li {display: flex; gap: 0.15rem; color: var(--color-txt-b6);}
+.studentWrap .studentList .advisorInfo .infoList > ul > li > .tit {flex-shrink: 0; font-weight: 700;}
+
+.studentWrap .studentList .no-data {display: flex; flex-direction: column; align-items: center; justify-content: center; width: 100%; height: 100%; text-align: center; color: var(--color-txt-b7);}
+
+
+
+/* 교직원메뉴_지도학생목록(교수) - 모달 */
+.messageModal {position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 9999; display: flex; align-items: center; justify-content: center; opacity: 0; visibility: hidden; transition: 0.3s;}
+.messageModal::before {content: ''; display: block; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.7); position: absolute; top: 0; left: 0; z-index: -1;}
+.messageModal .modalWrap {display: flex; flex-direction: column; width: calc(100% - 2.8rem); max-width: 28rem; max-height: 90vh; overflow-y: auto; background-color: var(--color-bg-fff); border-radius: 1rem; padding: 1.2rem 1rem; scrollbar-width: none; -ms-overflow-style: none;}
+.messageModal .modalWrap::-webkit-scrollbar {display: none;}
+.messageModal .modalWrap .modalHeader p {font-size: 0.9rem; font-weight: 700; color: var(--color-txt-b1); line-height: 1.4; margin-bottom: 0.9rem;}
+.messageModal .modalWrap .modalBody ul > li.textareaWrap {margin-top: 0.5rem;}
+.messageModal .modalWrap .modalBody ul > li label {display: block; font-size: 0.6rem; color: var(--color-txt-b7); margin-bottom: 0.15rem;}
+.messageModal .modalWrap .modalFooter {display: flex; justify-content: flex-end; gap: 0.6rem; margin-top: 0.75rem;}
+.messageModal .modalWrap .modalFooter .cancel {min-width: auto; width: 3.2rem;}
+.messageModal .modalWrap .modalFooter .send {min-width: auto; width: 5.25rem;}
+
+
+
+/* 교직원메뉴_지도학생목록(교수) - 모달 - 표시 */
+.messageModal.show {opacity: 1; visibility: visible;}
+
+
+
+/* 대학생활_강의정보-[tab]수업시간표(교수) */
+.timeTableInfo {margin-bottom: 0.65rem;}
+.timeTableInfo ul > li + li {padding-top: 0.5rem;}
+.timeTableInfo ul > li .cate {font-weight: 500; color: var(--color-txt-g60);}
+.timeTableInfo ul > li .desc {font-weight: 700; color: var(--color-txt-b4);}
+
+
+
 /* 반응형 */
 @media screen and (max-width: 374px) {
 
@@ -353,6 +403,12 @@
   /* 학사정보_학기별성적-[tab]학기별성적(학생) */
   .gradeInfo > ul {row-gap: 0.15rem;}
   .gradeInfo > ul > li.total {width: 100%;}
+
+
+
+  /* 교직원메뉴_지도학생목록(교수) */
+  .studentWrap .studentList .advisorInfo .infoList > ul {flex-wrap: wrap; row-gap: 0.1rem;}
+  .studentWrap .studentList .advisorInfo .infoList > ul > li:first-child {width: 100%;}
 }
 
 

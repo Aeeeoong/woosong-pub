@@ -34,26 +34,25 @@
     <main class="subLayout">
       <div class="contactWrap">
         <div class="filterWrap">
-        <ul class="radioWrap">
-          <!-- ★ 개발: 선택할 라디오 버튼 input에 checked 속성 추가 -->
-          <li>
-            <input type="radio" id="name" name="search_type" checked>
-            <label for="name">이름</label>
-          </li>
-          <li>
-            <input type="radio" id="dept" name="search_type">
-            <label for="dept">부서</label>
-          </li>
-        </ul>
-        <div class="searchBox onlyInput">
-          <div class="input_wrap">
-            <label for="search_input" class="hid">검색어 입력</label>
-            <input type="text" id="search_input" placeholder="검색어를 입력하세요">
+          <ul class="radioWrap">
+            <!-- ★ 개발: 선택할 라디오 버튼 input에 checked 속성 추가 -->
+            <li>
+              <input type="radio" id="name" name="search_type" checked>
+              <label for="name">이름</label>
+            </li>
+            <li>
+              <input type="radio" id="dept" name="search_type">
+              <label for="dept">부서</label>
+            </li>
+          </ul>
+          <div class="searchBox onlyInput">
+            <div class="input_wrap">
+              <label for="search_input" class="hid">검색어 입력</label>
+              <input type="text" id="search_input" placeholder="검색어를 입력하세요">
+            </div>
+            <button type="button" class="btn_search" aria-label="검색"></button>
           </div>
-          <button type="button" class="btn_search" aria-label="검색"></button>
         </div>
-      </div>
-
         <ul class="contactList">
           <!-- ★개발: 
             페이지 로드시 아래의 li를 추가해주시면 됩니다.(로드 시 화면입니다.)
