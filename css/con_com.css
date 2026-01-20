@@ -261,7 +261,7 @@ div[class^="tab_st"] li.w100 {width: 100% !important;}
 
 /* 탭 : 스크롤 처리 */
 .tab_st1.scroll {overflow-x: auto; width: calc(100% + var(--paddingLeftRight) * 2); padding-left: var(--paddingLeftRight); padding-right: var(--paddingLeftRight); margin-left: calc(var(--paddingLeftRight) * -1); margin-right: calc(var(--paddingLeftRight) * -1);}
-.tab_st2.scroll ul {overflow-x: auto; width: calc(100% + var(--paddingLeftRight) * 2); padding-left: var(--paddingLeftRight); padding-right: var(--paddingLeftRight); margin-left: calc(var(--paddingLeftRight) * -1); margin-right: calc(var(--paddingLeftRight) * -1);} 
+.tab_st2.scroll ul {overflow-x: auto;} 
 .tab_st1.scroll::-webkit-scrollbar,
 .tab_st2.scroll ul::-webkit-scrollbar {display: none;}
 div[class^="tab_st"].scroll ul {flex-wrap: nowrap;}
