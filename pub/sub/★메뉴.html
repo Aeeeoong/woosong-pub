@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+
+  <!-- css -->
+  <link rel="stylesheet" href="../../css/basic.css">
+  <link rel="stylesheet" href="../../css/layout.css">
+  <link rel="stylesheet" href="../../css/con_com.css">
+  <link rel="stylesheet" href="../../css/sub.css">
+
+  
+  <!-- js -->
+  <script src="../../js/jquery-3.7.1.min.js"></script>
+  <script type="text/javascript" src="../../js/script.js"></script>
+
+
+  <!-- font -->
+  <link rel="stylesheet" href="../../font/Pretendard/fonts.css" media="all">
+  <link rel="stylesheet" href="../../font/Remixicon/remixicon.css" media="all">
+
+</head>
+<body>
+  <div id="wrap">
+    <header class="menuLayout">
+      <!-- ★ 개발: 로그아웃입니다. -->
+      <button type="button" aria-label="로그아웃">
+        <i class="ri-login-box-line" aria-hidden="true"></i>
+      </button>
+      <button type="button" aria-label="메뉴 닫기">
+        <img src="../../images/sub/menu_close.png" alt="메뉴 닫기">
+      </button>
+    </header>
+    <main class="menuLayout nonePBottom">
+      <div class="menuWrap">
+        <div class="userInfo">
+          <dl>
+            <dt>김우송님</dt>
+            <dd>철도물류대학 철도경영학과</dd>
+          </dl>
+          <ul class="controlBox">
+            <li>
+              <span>푸시 알림</span>
+              <label for="is_push" class="toggleSwitch">
+                <input type="checkbox" checked id="is_push">
+                <span class="slider"></span>
+              </label>
+            </li>
+            <li>
+              <span>언어설정</span>
+              <button class="btn_sub02 mini">
+                <img src="../../images/sub/menu_refresh.png" alt="언어설정">
+                <!-- ★ 개발: 영어일 때는 [ ENG ] 대신 [ KOR ] 출력해주시면 됩니다. -->
+                ENG
+              </button>
+            </li>
+          </ul>
+        </div>
+        <div id="menuList">
+          <ul class="depth_01">
+            <!-- ★ 개발: 로드시 보여질 메뉴의 li에 active 클래스를 추가해주시면 됩니다. -->
+            <li class="fullDown_item active">
+              <a href="#" class="">
+                <span>depth_01</span>
+              </a>
+              <div class="depth_02_wrap">
+                <ul class="depth_02">
+                  <li>
+                    <a href="#" class="fullDown_link">
+                      <span>depth_02</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="fullDown_link">
+                      <span>depth_02</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="fullDown_item">
+              <a href="#" class="">
+                <span>depth_01</span>
+              </a>
+              <div class="depth_02_wrap">
+                <ul class="depth_02">
+                  <li>
+                    <a href="#" class="fullDown_link">
+                      <span>depth_02</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="fullDown_link">
+                      <span>depth_02</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="fullDown_link">
+                      <span>depth_02</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="fullDown_link">
+                      <span>depth_02</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="fullDown_link">
+                      <span>depth_02</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="fullDown_item">
+              <a href="#" class="">
+                <span>depth_01</span>
+              </a>
+              <div class="depth_02_wrap">
+                <ul class="depth_02">
+                  <li>
+                    <a href="#" class="fullDown_link">
+                      <span>depth_02</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="fullDown_link">
+                      <span>depth_02</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="fullDown_link">
+                      <span>depth_02</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="fullDown_link">
+                      <span>depth_02</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="fullDown_link">
+                      <span>depth_02</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="fullDown_link">
+                      <span>depth_02</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="fullDown_item">
+              <a href="#" class="">
+                <span>depth_01</span>
+              </a>
+              <div class="depth_02_wrap">
+                <ul class="depth_02">
+                  <li>
+                    <a href="#" class="fullDown_link">
+                      <span>depth_02</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="fullDown_link">
+                      <span>depth_02</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="fullDown_link">
+                      <span>depth_02</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="fullDown_link">
+                      <span>depth_02</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+    <!-- ★ 개발: 메뉴 페이지로 바텀 네비게이션이 없습니다. -->
+  </div>
+</body>
+</html>

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+
+  <!-- css -->
+  <link rel="stylesheet" href="../../css/basic.css">
+  <link rel="stylesheet" href="../../css/layout.css">
+  <link rel="stylesheet" href="../../css/con_com.css">
+  <link rel="stylesheet" href="../../css/sub.css">
+
+  
+  <!-- js -->
+  <script src="../../js/jquery-3.7.1.min.js"></script>
+  <script type="text/javascript" src="../../js/script.js"></script>
+
+
+  <!-- font -->
+  <link rel="stylesheet" href="../../font/Pretendard/fonts.css" media="all">
+  <link rel="stylesheet" href="../../font/Remixicon/remixicon.css" media="all">
+
+</head>
+<body data-header-scroll="true">
+  <div id="wrap">
+    <header class="subLayout">
+      <button type="button" aria-label="뒤로 가기">
+        <i class="ri-arrow-left-s-line" aria-hidden="true"></i>
+      </button>
+      <h1 class="tit1">알림센터</h1>
+    </header>
+    <main class="subLayout nonePBottom">
+      <div class="tab_st1 scroll">
+        <ul>
+          <!-- ★ 개발: 활성화 탭에 on 클래스 추가해주시면 됩니다. -->
+          <li><a href="#"><span>공지메세지</span></a></li>
+          <li class="on"><a href="#"><span>알림메세지</span></a></li>
+          <li><a href="#"><span>보낸메세지</span></a></li>
+        </ul>
+      </div>
+      <div class="searchBox">
+        <div class="select_wrap">
+          <label for="search_select" class="hid">검색 조건 선택</label>
+          <select id="search_select">
+            <option>보낸사람</option>
+            <option>제목</option>
+          </select>
+        </div>
+        <span class="divider"></span>
+        <div class="input_wrap">
+          <label for="search_input" class="hid">검색어 입력</label>
+          <input type="text" id="search_input" placeholder="검색어를 입력하세요">
+        </div>
+        <button type="button" class="btn_search" aria-label="검색"></button>
+      </div>
+      <div class="noticeListWrap alertCenter">
+        <ul class="noticeList">
+          <!-- ★ 개발: 초기 10개의 알림메세지 표시, 하단의 더보기 클릭 시 10개씩 추가 표시됩니다. -->
+          <li>
+            <div class="delBtnWrap">
+              <!-- ★ 개발: 알림 삭제 버튼입니다. -->
+              <button type="button" class="delBtn">
+                <i class="ri-close-large-line" aria-hidden="true" aria-label="알림 삭제"></i>
+              </button>
+            </div>
+            <a href="#">
+              <h3 class="tit3">2026학년도 1학기 학자금대출 제도 안내</h3>
+              <p>
+                <span>보낸날짜: <em>01. 07 11:58</em></span>
+                <span>확인날짜: <em>01. 07 11:58</em></span>
+              </p>
+            </a>
+          </li>
+          <li>
+            <div class="delBtnWrap">
+              <button type="button" class="delBtn">
+                <i class="ri-close-large-line" aria-hidden="true" aria-label="알림 삭제"></i>
+              </button>
+            </div>
+            <a href="#">
+              <h3 class="tit3">2026학년도 제1학기 우송대학교 수학 안내 
+                (학부 및 대학원)</h3>
+              <p>
+                <span>보낸날짜: <em>01. 07 11:58</em></span>
+                <span>확인날짜: <em>01. 07 11:58</em></span>
+              </p>
+            </a>
+          </li>
+          <li>
+            <div class="delBtnWrap">
+              <button type="button" class="delBtn">
+                <i class="ri-close-large-line" aria-hidden="true" aria-label="알림 삭제"></i>
+              </button>
+            </div>
+            <a href="#">
+              <h3 class="tit3">2026학년도 1학기 유학생(재학생) 기숙사 신청 
+                공고문</h3>
+              <p>
+                <span>보낸날짜: <em>01. 07 11:58</em></span>
+                <span>확인날짜: <em>01. 07 11:58</em></span>
+              </p>
+            </a>
+          </li>
+          <li>
+            <div class="delBtnWrap">
+              <button type="button" class="delBtn">
+                <i class="ri-close-large-line" aria-hidden="true" aria-label="알림 삭제"></i>
+              </button>
+            </div>
+            <a href="#">
+              <h3 class="tit3">‘2026년 상반기 경기도 대학생 학자금 대출이자 지원’ 사업 안내</h3>
+              <p>
+                <span>보낸날짜: <em>01. 07 11:58</em></span>
+                <span>확인날짜: <em>01. 07 11:58</em></span>
+              </p>
+            </a>
+          </li>
+          <li>
+            <div class="delBtnWrap">
+              <button type="button" class="delBtn">
+                <i class="ri-close-large-line" aria-hidden="true" aria-label="알림 삭제"></i>
+              </button>
+            </div>
+            <a href="#">
+              <h3 class="tit3">우송정보센터 네트워크 장비 교체 작업으로 인한 인터넷 중단 안내</h3>
+              <p>
+                <span>보낸날짜: <em>01. 07 11:58</em></span>
+                <span>확인날짜: <em>01. 07 11:58</em></span>
+              </p>
+            </a>
+          </li>
+          <li>
+            <div class="delBtnWrap">
+              <button type="button" class="delBtn">
+                <i class="ri-close-large-line" aria-hidden="true" aria-label="알림 삭제"></i>
+              </button>
+            </div>
+            <a href="#">
+              <h3 class="tit3">2025학년도 겨울학기 수강소감설문(수업평가) 
+                시행 안내</h3>
+              <p>
+                <span>보낸날짜: <em>01. 07 11:58</em></span>
+                <span>확인날짜: <em>01. 07 11:58</em></span>
+              </p>
+            </a>
+          </li>
+          <li>
+            <div class="delBtnWrap">
+              <button type="button" class="delBtn">
+                <i class="ri-close-large-line" aria-hidden="true" aria-label="알림 삭제"></i>
+              </button>
+            </div>
+            <a href="#">
+              <h3 class="tit3">2026학년 우송대학교 정부재정지원사업단 전담직원 채용</h3>
+              <p>
+                <span>보낸날짜: <em>01. 07 11:58</em></span>
+                <span>확인날짜: <em>01. 07 11:58</em></span>
+              </p>
+            </a>
+          </li>
+          <li>
+            <div class="delBtnWrap">
+              <button type="button" class="delBtn">
+                <i class="ri-close-large-line" aria-hidden="true" aria-label="알림 삭제"></i>
+              </button>
+            </div>
+            <a href="#">
+              <h3 class="tit3">2026학년 우송대학교 정부재정지원사업단 전담직원 채용</h3>
+              <p>
+                <span>보낸날짜: <em>01. 07 11:58</em></span>
+                <span>확인날짜: <em>01. 07 11:58</em></span>
+              </p>
+            </a>
+          </li>
+          <li>
+            <div class="delBtnWrap">
+              <button type="button" class="delBtn">
+                <i class="ri-close-large-line" aria-hidden="true" aria-label="알림 삭제"></i>
+              </button>
+            </div>
+            <a href="#">
+              <h3 class="tit3">2026학년 우송대학교 정부재정지원사업단 전담직원 채용</h3>
+              <p>
+                <span>보낸날짜: <em>01. 07 11:58</em></span>
+                <span>확인날짜: <em>01. 07 11:58</em></span>
+              </p>
+            </a>
+          </li>
+          <li>
+            <div class="delBtnWrap">
+              <button type="button" class="delBtn">
+                <i class="ri-close-large-line" aria-hidden="true" aria-label="알림 삭제"></i>
+              </button>
+            </div>
+            <a href="#">
+              <h3 class="tit3">2026학년 우송대학교 정부재정지원사업단 전담직원 채용</h3>
+              <p>
+                <span>보낸날짜: <em>01. 07 11:58</em></span>
+                <span>확인날짜: <em>01. 07 11:58</em></span>
+              </p>
+            </a>
+          </li>
+          <!-- ★ 개발: 알림메세지가 없을 경우 아래 내용만 출력해주시면 됩니다.
+
+            <li class="no-data">
+              알림메세지가 없습니다.
+            </li>
+          -->
+        </ul>
+        <!-- ★ 개발: 알림메세지가 10개 이상 있을 경우 더보기 버튼 출력해주세요. -->
+        <button type="button" class="btn_sub02">더보기
+          <i class="ri-arrow-down-s-line" aria-hidden="true"></i>
+        </button>
+      </div>
+    </main>
+    <!-- ★ 개발: 알림메세지 목록 페이지로 바텀 네비게이션이 없습니다. -->
+  </div>
+</body>
+</html>

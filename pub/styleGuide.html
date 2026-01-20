@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>styleGuide</title>
+
+  <!-- css -->
+  <link rel="stylesheet" href="../css/basic.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/con_com.css">
+
+  <!-- font -->
+  <link rel="stylesheet" href="../font/Pretendard/fonts.css" media="all">
+  <link rel="stylesheet" href="../font/Remixicon/remixicon.css" media="all">
+
+</head>
+<style>
+  #wrap {background-color: #eef4fa;}
+  .tit1 + [class^='row'] {margin-bottom: 1rem;}
+  [class^='row'] {display: flex; flex-wrap: wrap; gap: 10px; align-items: center; width: 100%;}
+  [class^='row'] > p {border-radius: 10px; text-align: center;}
+  .row01 > p {padding: 10px;}
+  .form_item + .form_item {margin-top: 1rem;}
+</style>
+<body>
+  <div id="wrap">
+    <main>
+      <h1 class="tit1">시간표 테스트</h1>
+      <div class="timeTable">
+        <table>
+          <thead>
+            <tr>
+              <th></th>
+              <th>월</th>
+              <th>화</th>
+              <th>수</th>
+              <th>목</th>
+              <th>금</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- ★ 개발:
+                1. <tbody>의 <tr> : 30분 간격입니다. 주석으로 표시하였습니다.
+                2. <tbody>의 <tr> 내부 <td>는 월,화,수,목,금 요일입니다.
+                3. 수업정보 표시 블록입니다. <td> 안에 추가해주세요.
+                   <div class="schedule_item_inner bg_01" style="height: calc(300% + 3px);";>
+
+                    .schedule_item_inner : 수업정보 표시 블록 래퍼입니다.
+
+                    bg_01 ~ bg_08 클래스 : 수업정보 표시 블록 색상입니다.
+
+                    style="height: calc(300% + 3px);"; : 수업정보 표시 블록 높이입니다.
+                    # calc(100% + 1px) : 30분 짜리 수업입니다.
+                    # calc(200% + 2px) : 60분 짜리 수업입니다.
+                    # calc(300% + 3px) : 90분 짜리 수업입니다.
+                    # calc(400% + 4px) : 120분 짜리 수업입니다.
+            -->
+            <!-- 09:00 -->
+            <tr>
+              <th>09</th>
+              <td></td> <!-- 월 -->
+              <td></td> <!-- 화 --> 
+              <td></td> <!-- 수 -->
+              <td></td> <!-- 목 -->
+              <td></td> <!-- 금 -->
+            </tr>
+            <!-- 09:30 -->
+            <!-- 예시) 화요일 09:30 시작, 2시간 짜리 수업입니다. -->
+            <tr>
+              <th></th>
+              <td></td>
+              <td>
+                <div class="schedule_item_inner bg_02" style="height: calc(400% + 4px);";>
+                  <p class="title">말하기 한국어</p>
+                  <span class="professor">유희경</span>
+                </div>
+              </td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <!-- 10:00 -->
+            <!-- 예시) 수요일 10:00 시작, 1시간 30분 짜리 수업입니다. -->
+            <tr>
+              <th>10</th>
+              <td></td>
+              <td></td>
+              <td>
+                <div class="schedule_item_inner bg_08" style="height: calc(300% + 3px);";>
+                  <p class="title">읽기 한국어</p>
+                  <span class="professor">이수인</span>
+                </div>
+              </td>
+              <td></td>
+              <td></td>
+            </tr>
+            <!-- 10:30 -->
+            <!-- 예시) 목요일 10:30 시작, 2시간 짜리 수업입니다. -->
+            <tr>
+              <th></th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>
+                <div class="schedule_item_inner bg_05" style="height: calc(400% + 4px);";>
+                  <p class="title">쓰기 한국어</p>
+                  <span class="professor">이수인</span>
+                </div>
+              </td>
+              <td></td>
+            </tr>
+            <!-- 11:00 -->
+            <!-- 예시) 금요일 11:00 시작, 1시간 짜리 수업입니다. -->
+            <tr>
+              <th>11</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>
+                <div class="schedule_item_inner bg_06" style="height: calc(200% + 2px);";>
+                  <p class="title">쓰기 한국어</p>
+                  <span class="professor">이수인</span>
+                </div>
+              </td>
+            </tr>
+            <!-- 11:30 -->
+            <tr>
+              <th></th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <!-- 12:00 -->
+            <tr>
+              <th>12</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <!-- 12:30 -->
+            <tr>
+              <th></th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <!-- 13:00 -->
+            <tr>
+              <th>13</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <!-- 13:30 -->
+            <tr>
+              <th></th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <!-- 14:00 -->
+            <tr>
+              <th>14</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <!-- 14:30 -->
+            <tr>
+              <th></th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <!-- 15:00 -->
+            <tr>
+              <th>15</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <!-- 15:30 -->
+            <tr>
+              <th></th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <!-- 16:00 -->
+            <tr>
+              <th>16</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <!-- 16:30 -->
+            <tr>
+              <th></th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <!-- 17:00 -->
+            <tr>
+              <th>17</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <!-- 17:30 -->
+            <tr>
+              <th></th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <!-- 18:00 -->
+            <tr>
+              <th>18</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <!-- 18:30 -->
+            <tr>
+              <th></th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <!-- 19:00 -->
+            <tr>
+              <th>19</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <!-- 19:30 -->
+            <tr>
+              <th></th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <h1 class="tit1">bg_color</h1>
+      <div class="row01">
+        <p class="bg_main01">bg_main01</p>
+        <p class="bg_main02">bg_main02</p>
+        <p class="bg_green">bg_green</p>
+        <p class="bg_orange">bg_orange</p>
+        <p class="bg_light_blue">bg_light_blue</p>
+        <p class="bg_gray">bg_gray</p>
+        <p class="bg_navy">bg_navy</p>
+        <p class="bg_cg">bg_cg</p>
+        <p class="bg_ng">bg_ng</p>
+        <p class="bg_wg">bg_wg</p>
+      </div>
+
+      <h1 class="tit1">text_black</h1>
+      <div class="row02">
+        <p class="color_b1">color_b1</p>
+        <p class="color_b2">color_b2</p>
+        <p class="color_b3">color_b3</p>
+        <p class="color_b4">color_b4</p>
+        <p class="color_b5">color_b5</p>
+        <p class="color_b6">color_b6</p>
+      </div>
+
+      <h1 class="tit1">text_gray</h1>
+      <div class="row03">
+        <p class="color_g60">color_g60</p>
+        <p class="color_g50">color_g50</p>
+        <p class="color_g40">color_g40</p>
+        <p class="color_g30">color_g30</p>
+        <p class="color_g20">color_g20</p>
+        <p class="color_fff">color_fff</p>
+      </div>
+
+      <h1 class="tit1">text_title</h1>
+      <div class="row04">
+        <p class="tit1">tit1</p>
+        <p class="tit2">tit2</p>
+        <p class="tit3">tit3</p>
+        <p class="tit4">tit4</p>
+      </div>
+
+      <h1 class="tit1">text_strong</h1>
+      <div class="row05">
+        <p class="font_r">font_r</p>
+        <p class="font_m">font_m</p>
+        <p class="font_sb">font_sb</p>
+        <p class="font_em01">font_em01</p>
+        <p class="font_em02">font_em02</p>
+        <p class="font_embg01">font_embg01</p>
+        <p class="font_embg02">font_embg02</p>
+        <p class="font_small">font_small</p>
+      </div>
+
+      <h1 class="tit1">text_line</h1>
+      <div class="row06">
+        <p class="Tline_b">Tline_b</p>
+        <p class="bu_st1">bu_st1</p>
+        <p class="bu_st2">bu_st2</p>
+        <p class="bu_st3">bu_st3</p>
+        <p class="bu_st4">bu_st4</p>
+      </div>
+
+      <h1 class="tit1">ordered_list_st</h1>
+      <div class="row07">
+        <ol class="list_ol1">
+          <li><span class="num">01.</span>list_ol1
+            <ol class="list_ol2">
+              <li><span class="num">1.</span>list_ol2</li>
+              <li><span class="num">2.</span>list_ol2</li> 
+              <li><span class="num">3.</span>list_ol2</li>
+            </ol>
+          </li>
+          <li><span class="num">02.</span>list_ol1</li>
+          <li><span class="num">03.</span>list_ol1</li>
+        </ol>
+      </div>
+
+      <h1 class="tit1">link_type : bu_link, bu_info01, bu_info02, bu_warn</h1>
+      <div class="row08">
+        <a href="#" class="bu_link">링크, 새창이동/Medium/150%/-2%/#2781F9</a>
+        <span class="bu_info01">안내</span>
+        <span class="bu_info02">강조안내내용</span>
+        <span class="bu_warn">주의</span>
+      </div>
+
+      <h1 class="tit1">icon_type : small(0.6rem), regular(0.8rem), medium(1rem), large(1.2rem)</h1>
+      <div class="row09">
+        <p class="img_icon small">
+          <img src="../images/common/alarm_active.png" alt="">
+        </p>
+        <p class="img_icon regular">
+          <img src="../images/common/alarm_active.png" alt="">
+        </p>
+        <p class="img_icon medium">
+          <img src="../images/common/alarm_active.png" alt="">
+        </p>
+        <p class="img_icon large">
+          <img src="../images/common/alarm_active.png" alt="">
+        </p>
+      </div>
+      
+      <h1 class="tit1">badge_type : type1, type2, type3</h1>
+      <div class="row10">
+        <p class="badge type1">재학생</p>
+        <p class="badge type2">재학생</p>
+        <p class="badge type3">재학생</p>
+      </div>
+
+      <h1 class="tit1">1차 탭 타입 : tab_st1</h1>
+      <div class="row11">
+        <div class="tab_st1 Tab_w30">
+          <ul>
+            <li class="on"><a href="#"><span>Tab 01</span></a></li>
+            <li><a href="#"><span>Tab 02</span></a></li>
+            <li><a href="#"><span>Tab 03</span></a></li>
+          </ul>
+        </div>
+      </div>
+
+      <h1 class="tit1">2차 탭 타입 : tab_st2</h1>
+      <div class="row11">
+        <div class="tab_st2 Tab_w30">
+          <ul>
+            <li class="on"><a href="#"><span>Tab 01</span></a></li>
+            <li><a href="#"><span>Tab 02</span></a></li>
+            <li><a href="#"><span>Tab 03</span></a></li>
+          </ul>
+        </div>
+      </div>
+
+      <h1 class="tit1">box_type : box_st1, box_st2, box_st3</h1>
+      <div class="row12">
+        <div class="box_st1">
+          <div class="inner">
+            <!-- <p class="box_tit">box_tit</p> -->
+            <ul class="list_st1">
+              <li>list_st1
+                <ul class="list_st2">
+                  <li>list_st2</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="box_st2">
+          <div class="inner">
+            <!-- <p class="box_tit">box_tit</p> -->
+            <ul class="list_st1">
+              <li>list_st1
+                <ul class="list_st2">
+                  <li>list_st2</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="box_st3">
+          <div class="inner">            
+            <!-- <p class="box_tit">box_tit</p> -->
+            <ul class="list_st1">
+              <li>list_st1
+                <ul class="list_st2">
+                  <li>list_st2</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <h1 class="tit1">btn_type : btn_main01, btn_sub01, btn_nUse, btn_sub02</h1>
+      <div class="row13">
+        <div class="btn_wrap">
+          <button class="btn_main01">btn_main01</button>
+          <button class="btn_sub01">btn_sub01</button>
+          <button class="btn_nUse">btn_nUse</button>
+          <button class="btn_sub02">btn_sub02</button>
+        </div>
+      </div>
+      <h1 class="tit1">btn_type : small</h1>
+      <div class="row14">
+        <div class="btn_wrap">
+          <button class="btn_main01 small">btn_small</button>
+          <button class="btn_sub01 small">btn_small</button>
+          <button class="btn_nUse small">btn_small</button>
+          <button class="btn_sub02 small">btn_small</button>          
+        </div>
+      </div>
+      <h1 class="tit1">btn_type : mini</h1>
+      <div class="row15">
+        <div class="btn_wrap">
+          <button class="btn_main01 mini">btn_mini</button>
+          <button class="btn_sub01 mini">btn_mini</button>
+          <button class="btn_nUse mini">btn_mini</button>
+          <button class="btn_sub02 mini">btn_mini</button>          
+        </div>
+      </div>
+      <h1 class="tit1">btn_type : btn_ico</h1>
+      <div class="row16">
+        <div class="btn_wrap">
+          <button class="btn_main01 btn_icon">아이콘과 텍스트<i class="ri-add-line"></i></button>
+          <button class="btn_sub01 btn_icon">아이콘과 텍스트<i class="ri-add-line"></i></button>
+          <button class="btn_nUse btn_icon">아이콘과 텍스트<i class="ri-add-line"></i></button>
+          <button class="btn_sub02 btn_icon">아이콘과 텍스트<i class="ri-add-line"></i></button>
+     
+        </div>
+      </div>
+      <h1 class="tit1">btn_type : ico</h1>
+      <div class="row17">
+        <div class="btn_wrap">
+          <button class="btn_main01 icon_only"><i class="ri-external-link-line"></i></button>
+          <button class="btn_sub01 icon_only"><i class="ri-external-link-line"></i></button>
+          <button class="btn_nUse icon_only"><i class="ri-external-link-line"></i></button>
+          <button class="btn_sub02 icon_only"><i class="ri-external-link-line"></i></button>
+          <button class="btn_sub02 icon_only circle"><i class="ri-arrow-right-s-line"></i></button>
+        </div>
+      </div>
+
+      <h1 class="tit1">form_type : form</h1>
+      <div class="row18">
+        <form action="#">
+          <fieldset>
+            <legend>form_tit</legend>
+            <div class="form_wrap">
+              <!-- Text Input -->
+              <div class="form_item">
+                <label for="input_text_basic">텍스트 입력</label>
+                <input type="text" placeholder="basic" id="input_text_basic">
+              </div>
+
+              <div class="form_item">
+                <label for="input_text_border_none">텍스트 입력 </label>
+                <input type="text" placeholder="border_none" id="input_text_border_none" class="border_none">
+              </div>
+
+              <!-- Select Box -->
+              <div class="form_item">
+                <label for="select_box_basic">셀렉트 박스</label>
+                <select id="select_box_basic">
+                  <option>basic size</option>
+                  <option>옵션 2</option>
+                  <option>옵션 3</option>
+                </select>
+              </div>
+
+              <div class="form_item">
+                <label for="select_box_small">셀렉트 박스</label>
+                <select id="select_box_small" class="small">
+                  <option>small size</option>
+                  <option>옵션 2</option>
+                  <option>옵션 3</option>
+                </select>
+              </div>
+
+              <!-- Checkbox List -->
+              <div class="form_item">
+                <p>체크박스 리스트 (ul[class^='chk'])</p>
+                <ul class="chkList">
+                  <li>
+                    <input type="checkbox" id="chk1">
+                    <label for="chk1">체크박스 항목 1</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="chk2" checked>
+                    <label for="chk2">체크박스 항목 2 (체크됨)</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="chk3">
+                    <label for="chk3">체크박스 항목 3</label>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Round Checkbox List (ul[class^='chk'].round) -->
+              <div class="form_item">
+                <p>원형 체크박스 리스트 (ul[class^='chk'].round)</p>
+                <ul class="chkList round">
+                  <li>
+                    <input type="checkbox" id="chkRound1">
+                    <label for="chkRound1">원형 체크박스 항목 1</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="chkRound2" checked>
+                    <label for="chkRound2">원형 체크박스 항목 2 (체크됨)</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="chkRound3">
+                    <label for="chkRound3">원형 체크박스 항목 3</label>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Single Checkbox (.chkBox) -->
+              <div class="form_item">
+                <p>단일 체크박스 (.chkBox)</p>
+                <div class="chkBox">
+                  <input type="checkbox" id="chkBox1">
+                  <label for="chkBox1">단일 체크박스 1</label>
+                </div>
+                <div class="chkBox">
+                  <input type="checkbox" id="chkBox2" checked>
+                  <label for="chkBox2">단일 체크박스 2 (체크됨)</label>
+                </div>
+              </div>
+
+              <!-- Round Checkbox (.chkBox.round) -->
+              <div class="form_item">
+                <p>원형 체크박스 (.chkBox.round)</p>
+                <div class="chkBox round">
+                  <input type="checkbox" id="chkBoxRound1">
+                  <label for="chkBoxRound1">원형 체크박스 1</label>
+                </div>
+                <div class="chkBox round">
+                  <input type="checkbox" id="chkBoxRound2" checked>
+                  <label for="chkBoxRound2">원형 체크박스 2 (체크됨)</label>
+                </div>
+              </div>
+
+              <!-- Radio Buttons -->
+              <div class="form_item">
+                <p>라디오 버튼</p>
+                <div style="display: flex; gap: 1rem;">
+                  <div>
+                    <input type="radio" id="radio1" name="radioGroup" checked>
+                    <label for="radio1">라디오 1</label>
+                  </div>
+                  <div>
+                    <input type="radio" id="radio2" name="radioGroup">
+                    <label for="radio2">라디오 2</label>
+                  </div>
+                  <div>
+                    <input type="radio" id="radio3" name="radioGroup">
+                    <label for="radio3">라디오 3</label>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Date Input -->
+              <div class="form_item">
+                <label for="date_input">날짜 선택</label>
+                <input type="date" value="2026-01-07" id="date_input">
+              </div>
+
+              <!-- Toggle Switch -->
+              <div class="form_item">
+                <p>토글 스위치</p>
+                <div style="display: flex; gap: 1rem; align-items: center;">
+                  <label class="toggleSwitch">
+                    <input type="checkbox">
+                    <span class="slider"></span>
+                  </label>
+                  <span>OFF</span>
+                  
+                  <label class="toggleSwitch">
+                    <input type="checkbox" checked>
+                    <span class="slider"></span>
+                  </label>
+                  <span>ON</span>
+                  
+                  <label class="toggleSwitch">
+                    <input type="checkbox" disabled>
+                    <span class="slider"></span>
+                  </label>
+                  <span>비활성화</span>
+                </div>
+              </div>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+      <h1 class="tit1">searchBox_type : searchBox</h1><!-- Search Box -->
+      <div class="row19">
+        <p>검색박스 (.searchBox)</p>
+        <div class="searchBox">
+          <div class="select_wrap">
+            <label for="search_select" class="hid">검색 조건 선택</label>
+            <select id="search_select">
+              <option>제목</option>
+              <option>내용</option>
+              <option>작성자</option>
+            </select>
+          </div>
+          <span class="divider"></span>
+          <div class="input_wrap">
+            <label for="search_input" class="hid">검색어 입력</label>
+            <input type="text" id="search_input" placeholder="검색어를 입력하세요">
+          </div>
+          <button type="button" class="btn_search" aria-label="검색"></button>
+        </div>
+      </div>
+
+      <h1 class="tit1">table_type : tbl_st1</h1>
+      <div class="tbl_st1">
+        <table>
+          <thead>
+            <tr>
+              <th>번호</th>
+              <th>제목</th>
+              <th>작성자</th>
+              <th>작성일</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>테이블 예시 1</td>
+              <td>홍길동</td>
+              <td>2026-01-07</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>테이블 예시 2</td>
+              <td>김철수</td>
+              <td>2026-01-06</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>테이블 예시 3</td>
+              <td>이영희</td>
+              <td>2026-01-05</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>테이블 예시 3</td>
+              <td>이영희</td>
+              <td>2026-01-05</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>테이블 예시 3</td>
+              <td>이영희</td>
+              <td>2026-01-05</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h1 class="tit1">table_type : tbl_st1 with tbody th</h1>
+      <div class="tbl_st1">
+        <table>
+          <colgroup>
+            <col style="width: 3.7rem;">
+          </colgroup>
+          <thead>
+            <tr>
+              <th>구분</th>
+              <th>항목</th>
+              <th>내용</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>첫 번째</th>
+              <td>항목 1</td>
+              <td>내용 1</td>
+            </tr>
+            <tr>
+              <th>두 번째</th>
+              <td>항목 2</td>
+              <td>내용 2</td>
+            </tr>
+            <tr>
+              <th>세 번째</th>
+              <td>항목 3</td>
+              <td>내용 3</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h1 class="tit1">table_type : tbl_st1 with tfoot</h1>
+      <div class="tbl_st1">
+        <table>
+          <thead>
+            <tr>
+              <th>항목</th>
+              <th>금액</th>
+              <th>비고</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>항목 1</td>
+              <td>10,000원</td>
+              <td>비고 1</td>
+            </tr>
+            <tr>
+              <td>항목 2</td>
+              <td>20,000원</td>
+              <td>비고 2</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <th>합계</th>
+              <td>30,000원</td>
+              <td>-</td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+
+      <!-- <h1 class="tit1">table_type : table with inputBox</h1>
+      <div class="tbl_st1">
+        <table>
+          <thead>
+            <tr>
+              <th>항목<em class="chkIco">*</em></th>
+              <th>입력</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>입력 필드<em class="chkIco">*</em></th>
+              <td>
+                <div class="inputBox">
+                  <input type="text" placeholder="입력하세요" id="tbl_input1">
+                  <input type="text" placeholder="입력하세요" id="tbl_input2">
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th>다중 입력</th>
+              <td>
+                <div class="inputBox">
+                  <input type="text" placeholder="입력 1" id="tbl_input3">
+                  <input type="text" placeholder="입력 2" id="tbl_input4">
+                  <input type="text" placeholder="입력 3" id="tbl_input5">
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div> -->
+
+      <div class="FileWrap">
+        <h3 class="tit3">첨부파일</h3>
+        <ul>
+          <li>
+            <a href="#">
+              <i class="ri-file-download-fill" aria-hidden="true" aria-label="첨부파일"></i>
+              <span>2026년 상반기 경기도 대학생 학자금 대출이자 지원 사업 안내.pdf</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="ri-file-download-fill" aria-hidden="true" aria-label="첨부파일"></i>
+              <span>2026년 상반기 경기도 대학생 학자금 대출이자 지원 사업 안내.pdf</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </main>
+  </div>
+  
+  <!-- js -->
+  <script src="../js/jquery-3.7.1.min.js"></script>
+  <script src="../js/script.js"></script>
+</body>
+</html>

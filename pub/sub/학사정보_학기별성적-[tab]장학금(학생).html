@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+
+  <!-- css -->
+  <link rel="stylesheet" href="../../css/basic.css">
+  <link rel="stylesheet" href="../../css/layout.css">
+  <link rel="stylesheet" href="../../css/con_com.css">
+  <link rel="stylesheet" href="../../css/sub.css">
+
+  
+  <!-- js -->
+  <script src="../../js/jquery-3.7.1.min.js"></script>
+  <script type="text/javascript" src="../../js/script.js"></script>
+
+
+  <!-- font -->
+  <link rel="stylesheet" href="../../font/Pretendard/fonts.css" media="all">
+  <link rel="stylesheet" href="../../font/Remixicon/remixicon.css" media="all">
+
+</head>
+<body data-header-scroll="true">
+  <div id="wrap" class="tablePage">
+    <header class="subLayout">
+      <button type="button" aria-label="뒤로 가기">
+        <i class="ri-arrow-left-s-line" aria-hidden="true"></i>
+      </button>
+      <h1 class="tit1">학사정보</h1>
+    </header>
+    <main class="subLayout tablePage">
+      <div class="innerLayout">
+        <div class="tab_st1 scroll type2">
+          <ul>
+            <!-- ★ 개발: 활성화 탭에 on 클래스 추가해주시면 됩니다. -->
+            <li><a href="#"><span>학기별성적</span></a></li>
+            <li><a href="#"><span>당학기성적</span></a></li>
+            <li><a href="#"><span>등록금</span></a></li>
+            <li class="on"><a href="#"><span>장학금</span></a></li>
+          </ul>
+        </div>
+        <div class="selectBox type2">
+          <div class="selectBox_item">
+            <label for="yearSelect" class="sr-only">학년도 선택</label>
+            <select id="yearSelect" class="small">
+              <option>2025</option>
+              <option>2024</option>
+              <option>2023</option>
+            </select>
+          </div>
+          <div class="selectBox_item">
+            <label for="semesterSelect" class="sr-only">학기 선택</label>
+            <select id="semesterSelect" class="small">
+              <option>1학기</option>
+              <option>여름학기</option>
+              <option>2학기</option>
+              <option>겨울학기</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="tableWrap">
+        <div class="tbl_st1">
+          <table>
+            <colgroup>
+              <col style="width: 4rem;">
+              <col style="width: auto;">
+              <col style="width: auto;">
+              <col style="width: auto;">
+              <col style="width: auto;">
+              <col style="width: auto;">
+            </colgroup>
+            <thead>
+              <tr>
+                <th>년도/학기</th>
+                <th>장학명</th>
+                <th>지급구분</th>
+                <th>입학금</th>
+                <th>수업료</th>
+                <th>합계</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>2025/1학기</th>
+                <td>중국 자매대학교 해외연수(유학생)</td>
+                <td>현금지급</td>
+                <td>0</td>
+                <td>3,303,000</td>
+                <td>3,303,000</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+    <!--
+      ★ 개발
+        : 특정 페이지(로그인 페이지, 알림 페이지, 메뉴페이지, 게시판-게시물 페이지) 제외 공통 영역입니다.
+        : 혹시나 싶어 필요한 html마다 모두 넣어두었으니, 참고 부탁드립니다.
+    -->
+    <div id="bottomNavigation">
+      <div class="bg">
+        <span class="circleBoxShadow"></span>
+        <span class="rectangle"></span>
+        <span class="circleBorderDelete"></span>
+      </div>
+      <ul class="iconWrap">
+        <li>
+          <a href="#">
+            <!-- ★개발: 각 페이지에 맞는 이미지를 출력하시면 됩니다.
+            
+              <img src="../../images/common/ID.png" alt="" aria-hidden="true" class="icn"/>
+            -->
+            <img src="../../images/common/ID_ON.png" alt="" aria-hidden="true" class="icn"/>
+            <span class="txt">모바일 신분증</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="../../images/common/schedule.png" alt="" aria-hidden="true" class="icn"/>
+            <!-- <img src="../../images/common/schedule_ON.png" alt="" aria-hidden="true" class="icn"/> -->
+            <span class="txt">학사일정</span>
+          </a>
+        </li>
+      </ul>
+      <a href="#" class="centerIcon" aria-label="홈">
+        <img src="../../images/common/home.png" alt="" aria-hidden="true"/>
+      </a>
+      <ul class="iconWrap">
+        <li>
+          <a href="#">
+            <img src="../../images/common/meal.png" alt="" aria-hidden="true" class="icn"/>
+            <!-- <img src="../../images/common/meal_ON.png" alt="" aria-hidden="true" class="icn"/> -->
+            <span class="txt">식단안내</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="../../images/common/notice.png" alt="" aria-hidden="true" class="icn"/>
+            <!-- <img src="../../images/common/notice_ON.png" alt="" aria-hidden="true" class="icn"/> -->
+            <span class="txt">공지사항</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>

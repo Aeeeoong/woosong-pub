@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+
+  <!-- css -->
+  <link rel="stylesheet" href="../css/basic.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/con_com.css">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" type="text/css" href="../css/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="../css/slick-theme.css"/>
+
+  
+  <!-- js -->
+  <script src="../js/jquery-3.7.1.min.js"></script>
+  <script type="text/javascript" src="../js/slick.min.js"></script>
+  <script type="text/javascript" src="../js/script.js"></script>
+
+
+  <!-- font -->
+  <link rel="stylesheet" href="../font/Pretendard/fonts.css" media="all">
+  <link rel="stylesheet" href="../font/Remixicon/remixicon.css" media="all">
+
+</head>
+<body data-header-scroll="true">
+  <div id="wrap">
+    <header>
+      <button type="button" aria-label="메뉴 열기">
+        <img src="../images/common/menu.png" alt="" aria-hidden="true">
+      </button>
+      <p class="logo">
+        <img src="../images/common/logo.png" alt="우송대학교 로고">
+      </p>
+      <a href="#" aria-label="알림 열기">
+        <img src="../images/common/alarm_on.png" alt="" aria-hidden="true">
+      </a>
+    </header>
+    <main>
+      <!-- ★개발: 모바일 신분증 페이지로 연결해주시면 됩니다. -->
+      <a href="#" class="row01 id_card student" aria-label="신분증 열기">
+        <div class="leftWrap">
+          <span class="badge type1">재학생</span>
+          <p class="name">홍길동님</p>
+          <p class="distribute">철도물류대학 철도경영학과</p>
+        </div>
+        <span class="rightWrap">
+          <img src="../images/common/qr.png" alt="" aria-hidden="true">
+        </span>
+      </a>
+      <!-- ★ 개발
+      
+        [ 교수 ]일 경우 출력해주시면 됩니다. (.id_card에 professor 클래스 추가)
+        <a href="#" class="id_card professor" aria-label="신분증 열기">
+          <div class="leftWrap">
+            <span class="badge type1">교수</span>
+            <p class="name">김교수님</p>
+            <p class="distribute">철도물류대학 철도경영학과</p>
+          </div>
+          <span class="rightWrap">
+            <img src="../images/common/qr.png" alt="" aria-hidden="true">
+          </span>
+        </a>
+
+        [ 교직원 ]일 경우 출력해주시면 됩니다. (.id_card에 staff 클래스 추가)
+        <a href="#" class="id_card staff" aria-label="신분증 열기">
+          <div class="leftWrap">
+            <span class="badge type1">교직원</span>
+            <p class="name">홍길동님</p>
+            <p class="distribute">철도물류대학 철도경영학과</p>
+          </div>
+          <span class="rightWrap">
+            <img src="../images/common/qr.png" alt="" aria-hidden="true">
+          </span>
+        </a>
+      -->
+
+      <div class="row02 link student">
+        <div class="slick_slider ">
+          <div class="slideWrap">
+            <ul>
+              <li>
+                <a href="">
+                  <p class="card_text">전자출결</p>
+                  <img src="../images/main/icon_e_attendance.png" alt="전자출결">
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <p class="card_text">열람실좌석 예약</p>
+                  <img src="../images/main/icon_seat_reservation.png" alt="열람실좌석 예약">
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <p class="card_text">솔드림+</p>
+                  <img src="../images/main/icon_sol_dream.png" alt="솔드림+">
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <p class="card_text">온라인강의</p>
+                  <img src="../images/main/icon_online_lecture.png" alt="온라인강의">
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <p class="card_text">학사일정</p>
+                  <img src="../images/main/icon_schedule.png" alt="학사일정">
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <p class="card_text">식단안내</p>
+                  <img src="../images/main/icon_meal.png" alt="식단안내">
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="slideWrap">
+            <ul>
+              <li>
+                <a href="">
+                  <p class="card_text">우송챗봇</p>
+                  <img src="../images/main/icon_chatbot.png" alt="우송챗봇">
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <p class="card_text">수업시간표</p>
+                  <img src="../images/main/icon_timetable.png" alt="수업시간표">
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <p class="card_text">등록금고지서</p>
+                  <img src="../images/main/icon_tuition.png" alt="등록금고지서">
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <p class="card_text">당학기 성적</p>
+                  <img src="../images/main/icon_grade.png" alt="당학기 성적">
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <p class="card_text">수강소감설문</p>
+                  <img src="../images/main/icon_schedule.png" alt="수강소감설문">
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <p class="card_text">전공능력성취도 평가</p>
+                  <img src="../images/main/icon_competency.png" alt="전공능력성취도 평가">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- ★ 개발
+        [ 교수 ]일 경우 출력해주시면 됩니다. (.link에 professor 클래스 추가)
+
+        <div class="row02 link professor">
+          <div class="slick_slider ">
+            <div class="slideWrap">
+              <ul>
+                <li>
+                  <a href="">
+                    <p class="card_text">강의정보</p>
+                    <img src="../images/main/icon_lecture_info.png" alt="강의정보">
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <p class="card_text">전자출결</p>
+                    <img src="../images/main/icon_e_attendance.png" alt="전자출결">
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <p class="card_text">솔드림+</p>
+                    <img src="../images/main/icon_sol_dream.png" alt="솔드림+">
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <p class="card_text">웹메일</p>
+                    <img src="../images/main/icon_webmail.png" alt="웹메일">
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <p class="card_text">전자결재</p>
+                    <img src="../images/main/icon_e_approval.png" alt="전자결재">
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <p class="card_text">우송챗봇</p>
+                    <img src="../images/main/icon_chatbot.png" alt="우송챗봇">
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="slideWrap">
+              <ul>
+                <li>
+                  <a href="">
+                    <p class="card_text">학사일정</p>
+                    <img src="../images/main/icon_schedule.png" alt="학사일정">
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <p class="card_text">열람실좌석 예약</p>
+                    <img src="../images/main/icon_seat_reservation.png" alt="열람실좌석 예약">
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <p class="card_text">온라인 강의</p>
+                    <img src="../images/main/icon_online_lecture.png" alt="온라인 강의">
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <p class="card_text">취업/우송지수</p>
+                    <img src="../images/main/icon_wosong_index.png" alt="취업/우송지수">
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <p class="card_text">지도학생목록</p>
+                    <img src="../images/main/icon_advisee_list.png" alt="지도학생목록">
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+       -->
+
+      <!-- ★ 개발
+        [ 교직원 ]일 경우 출력해주시면 됩니다. (.link에 staff 클래스 추가)
+
+        <div class="row02 link staff">
+          <div class="slick_slider ">
+            <div class="slideWrap">
+              <ul>
+                <li>
+                  <a href="">
+                    <p class="card_text">강의정보</p>
+                    <img src="../images/main/icon_lecture_info.png" alt="강의정보">
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <p class="card_text">전자출결</p>
+                    <img src="../images/main/icon_e_attendance.png" alt="전자출결">
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <p class="card_text">솔드림+</p>
+                    <img src="../images/main/icon_sol_dream.png" alt="솔드림+">
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <p class="card_text">웹메일</p>
+                    <img src="../images/main/icon_webmail.png" alt="웹메일">
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <p class="card_text">식단안내</p>
+                    <img src="../images/main/icon_meal.png" alt="식단안내">
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <p class="card_text">우송챗봇</p>
+                    <img src="../images/main/icon_chatbot.png" alt="우송챗봇">
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div> 
+      -->
+
+      <div class="row03 board">
+        <div class="tab_dep01">
+          <ul>
+            <!--
+            ★ 개발: 탭 연결 시 아래 내용 참고 부탁드립니다.
+
+              탭(data-tab-value)
+              - 1차 탭: data-tab-value, 예시- tab01, tab02
+              - 2차 탭: data-tab-value, 예시- sub01, sub02, sub03, sub04, sub05
+
+              리스트와 연결(data-tab)
+              - 1차 탭 첫번째(tab01) + 2차 탭 첫번째(sub01) => 리스트 연결 data-tab="tab01-sub01"
+              - 1차 탭 첫번째(tab01) + 2차 탭 두번째(sub02) => 리스트 연결 data-tab="tab01-sub02"
+              - 1차 탭 두번째(tab02) + 2차 탭 첫번째(sub01) => 리스트 연결 data-tab="tab02-sub01"
+            -->
+            <!-- ★ 개발: data-tab-value="tab01" -->
+            <li class="active" data-tab-value="tab01">
+              <button type="button">공지사항</button>
+            </li>
+            <!-- ★ 개발: data-tab-value="tab02" -->
+            <li data-tab-value="tab02">
+              <button type="button">학사일정</button>
+            </li>
+          </ul>
+          <a href="#">
+            <i class="ri-add-line"></i>
+          </a>
+        </div>
+        <div class="tab_dep02">
+          <ul>
+            <!-- ★ 개발: data-tab-value="sub01" -->
+            <li class="active" data-tab-value="sub01">
+              <button type="button">일반</button>
+            </li>
+            <!-- ★ 개발: data-tab-value="sub02" -->
+            <li data-tab-value="sub02">
+              <button type="button">학사</button>
+            </li>
+            <!-- ★ 개발: data-tab-value="sub03" -->
+            <li data-tab-value="sub03">
+              <button type="button">장학</button>
+            </li>
+            <!-- ★ 개발: data-tab-value="sub04" -->
+            <li data-tab-value="sub04">
+              <button type="button">입시</button>
+            </li>
+            <!-- ★ 개발: data-tab-value="sub05" -->
+            <li data-tab-value="sub05">
+              <button type="button">취업</button>
+            </li>
+          </ul>
+        </div>
+        <!-- 공지사항 + 일반 : data-tab="tab01-sub01" -->
+        <ul class="tabConWrap active" data-tab="tab01-sub01">
+          <li>
+            <a href="#">
+              <span class="date">12.25</span>
+              <span class="title">2026-1 우송디젯철도아카데미 교수초빙 추가 공고</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="date">12.20</span>
+              <span class="title">2025학년도 겨울학기 출석인정(공결) 처리 안내</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="date">12.15</span>
+              <span class="title">우송대학교 학칙 일부개정(안) 예고</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="date">12.12</span>
+              <span class="title">AI기반 융합콘텐츠 제작 교원 역량강화 연수 안내</span>
+            </a>
+          </li>
+        </ul>
+        <!-- 공지사항 + 학사 : data-tab="tab01-sub02" -->
+        <ul class="tabConWrap" data-tab="tab01-sub02">
+          <li>
+            <a href="#">
+              <span class="date">12.24</span>
+              <span class="title">[학사] 2025학년도 1학기 수강신청 안내</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="date">12.18</span>
+              <span class="title">[학사] 졸업논문 제출 일정 안내</span>
+            </a>
+          </li>
+        </ul>
+        <!-- 공지사항 + 장학 : data-tab="tab01-sub03" -->
+        <ul class="tabConWrap" data-tab="tab01-sub03">
+          <li>
+            <a href="#">
+              <span class="date">12.22</span>
+              <span class="title">[장학] 2025학년도 장학금 신청 안내</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="date">12.10</span>
+              <span class="title">[장학] 성적우수 장학금 지급 안내</span>
+            </a>
+          </li>
+        </ul>
+        <!-- 공지사항 + 입시 : data-tab="tab01-sub04" -->
+        <ul class="tabConWrap" data-tab="tab01-sub04">
+          <li class="no-data">
+            <p>등록된 데이터가 없습니다.</p>
+          </li>
+        </ul>
+        <!-- 공지사항 + 취업 : data-tab="tab01-sub05" -->
+        <ul class="tabConWrap" data-tab="tab01-sub05">
+          <li>
+            <a href="#">
+              <span class="date">12.19</span>
+              <span class="title">[취업] 취업박람회 참가 안내</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="date">12.05</span>
+              <span class="title">[취업] 기업 설명회 일정 안내</span>
+            </a>
+          </li>
+        </ul>
+        <!-- 학사일정 + 일반 : data-tab="tab02-sub01" -->
+        <ul class="tabConWrap" data-tab="tab02-sub01">
+          <li>
+            <a href="#">
+              <span class="date">01.02</span>
+              <span class="title">2025학년도 1학기 개강</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="date">01.15</span>
+              <span class="title">수강신청 기간</span>
+            </a>
+          </li>
+        </ul>
+        <!-- 학사일정 + 학사 : data-tab="tab02-sub02" -->
+        <ul class="tabConWrap" data-tab="tab02-sub02">
+          <li>
+            <a href="#">
+              <span class="date">02.01</span>
+              <span class="title">중간고사 기간</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="date">04.15</span>
+              <span class="title">기말고사 기간</span>
+            </a>
+          </li>
+        </ul>
+        <!-- 학사일정 + 장학 : data-tab="tab02-sub03" -->
+        <ul class="tabConWrap" data-tab="tab02-sub03">
+          <li class="no-data">
+            <p>등록된 데이터가 없습니다.</p>
+          </li>
+        </ul>
+        <!-- 학사일정 + 입시 : data-tab="tab02-sub04" -->
+        <ul class="tabConWrap" data-tab="tab02-sub04">
+          <li class="no-data">
+            <p>등록된 데이터가 없습니다.</p>
+          </li>
+        </ul>
+        <!-- 학사일정 + 취업 : data-tab="tab02-sub05" -->
+        <ul class="tabConWrap" data-tab="tab02-sub05">
+          <li class="no-data">
+            <p>등록된 데이터가 없습니다.</p>
+          </li>
+        </ul>
+      </div>
+    </main>
+    <!--
+      ★ 개발
+        : 특정 페이지(로그인 페이지, 알림 페이지, 메뉴페이지, 게시판-게시물 페이지) 제외 공통 영역입니다.
+        : 혹시나 싶어 필요한 html마다 모두 넣어두었으니, 참고 부탁드립니다.
+    -->
+    <div id="bottomNavigation">
+      <div class="bg">
+        <span class="circleBoxShadow"></span>
+        <span class="rectangle"></span>
+        <span class="circleBorderDelete"></span>
+      </div>
+      <ul class="iconWrap">
+        <li>
+          <a href="#">
+            <!-- ★개발: 각 페이지에 맞는 이미지를 출력하시면 됩니다.
+            
+              <img src="../images/common/ID.png" alt="" aria-hidden="true" class="icn"/>
+            -->
+            <img src="../images/common/ID_ON.png" alt="" aria-hidden="true" class="icn"/>
+            <span class="txt">모바일 신분증</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="../images/common/schedule.png" alt="" aria-hidden="true" class="icn"/>
+            <!-- <img src="../images/common/schedule_ON.png" alt="" aria-hidden="true" class="icn"/> -->
+            <span class="txt">학사일정</span>
+          </a>
+        </li>
+      </ul>
+      <a href="#" class="centerIcon" aria-label="홈">
+        <img src="../images/common/home.png" alt="" aria-hidden="true"/>
+      </a>
+      <ul class="iconWrap">
+        <li>
+          <a href="#">
+            <img src="../images/common/meal.png" alt="" aria-hidden="true" class="icn"/>
+            <!-- <img src="../images/common/meal_ON.png" alt="" aria-hidden="true" class="icn"/> -->
+            <span class="txt">식단안내</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="../images/common/notice.png" alt="" aria-hidden="true" class="icn"/>
+            <!-- <img src="../images/common/notice_ON.png" alt="" aria-hidden="true" class="icn"/> -->
+            <span class="txt">공지사항</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>

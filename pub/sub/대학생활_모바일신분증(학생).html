@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+
+  <!-- css -->
+  <link rel="stylesheet" href="../../css/basic.css">
+  <link rel="stylesheet" href="../../css/layout.css">
+  <link rel="stylesheet" href="../../css/con_com.css">
+  <link rel="stylesheet" href="../../css/sub.css">
+
+  
+  <!-- js -->
+  <script src="../../js/jquery-3.7.1.min.js"></script>
+  <script type="text/javascript" src="../../js/script.js"></script>
+
+
+  <!-- font -->
+  <link rel="stylesheet" href="../../font/Pretendard/fonts.css" media="all">
+  <link rel="stylesheet" href="../../font/Remixicon/remixicon.css" media="all">
+
+</head>
+<body data-header-scroll="true">
+  <div id="wrap">
+    <header class="subLayout">
+      <button type="button" aria-label="뒤로 가기">
+        <i class="ri-arrow-left-s-line" aria-hidden="true"></i>
+      </button>
+      <h1 class="tit1">모바일 신분증</h1>
+    </header>
+    <main class="subLayout idCardPage">
+      <div class="idCardWrap">
+        <div class="cardInfo">
+          <img src="../../images/sub/id_card_01.png" alt="학생증">
+          <div class="infoBox">
+            <dl class="left">
+              <dt class="name">김우송</dt>
+              <dd class="department">융합경영학부</dd>
+              <dd class="major">글로벌융합비즈니스학과</dd>
+              <dd>202612345</dd>
+            </dl>
+            <div class="right">
+              <img src="../../images/sub/id_card_user.png" alt="학생 사진">
+              <!-- ★ 개발: 학생 사진 없을 경우 아래 내용을 표시해주세요.
+
+                <img src="../../images/sub/id_no_img.png" alt="학생 사진 없음">
+              -->
+            </div>
+          </div>
+        </div>
+
+        <div class="QR">
+          <!-- ★ 개발: QR 코드 이미지 추가해주세요.(이미지 사이즈 160px x 160px) -->
+          <img src="../../images/sub/qr_code.png" alt="qr 코드">
+          <div class="qrBottom">
+            <span class="remainingTime">남은 시간 <em>01분 47초</em></span>
+            <!-- ★ 개발: 시간 만료 시 남은 시간 대신 아래 내용을 표시해주세요.
+             
+              <span>QR코드를 재발급하세요.</span>
+            -->
+            <button type="button" class="refreshBtn" aria-label="새로고침">
+              <i class="ri-reset-left-line" aria-hidden="true"></i>
+            </button>
+          </div>
+        </div>
+  
+        <div class="hanaWrap">
+          <ul>
+            <li>
+              <!-- ★ 개발: 하나원큐 링크 추가해주세요. -->
+              <a href="#">
+                <p class="img">
+                  <img src="../../images/sub/id_hana_01.png" alt="">
+                </p>
+                <p class="txt">
+                  <span class="title">조회/이체</span>
+                  <span class="desc">하나원큐
+                    <i class="ri-external-link-line" aria-hidden="true"></i>
+                  </span>
+                </p>
+              </a>
+            </li>
+            <li>
+              <!-- ★ 개발: 하나머니 링크 추가해주세요. -->
+              <a href="#">
+                <p class="img">
+                  <img src="../../images/sub/id_hana_02.png" alt="">
+                </p>
+                <p class="txt">
+                  <span class="title">포인트 확인</span>
+                  <span class="desc">하나머니
+                    <i class="ri-external-link-line" aria-hidden="true"></i>
+                  </span>
+                </p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+    <!--
+      ★ 개발
+        : 특정 페이지(로그인 페이지, 알림 페이지, 메뉴페이지, 게시판-게시물 페이지, 등록금고지서 페이지, 급여 내역서 페이지) 제외 공통 영역입니다.
+        : 혹시나 싶어 필요한 html마다 모두 넣어두었으니, 참고 부탁드립니다.
+    -->
+    <div id="bottomNavigation">
+      <div class="bg">
+        <span class="circleBoxShadow"></span>
+        <span class="rectangle"></span>
+        <span class="circleBorderDelete"></span>
+      </div>
+      <ul class="iconWrap">
+        <li>
+          <a href="#">
+            <!-- ★개발: 각 페이지에 맞는 이미지를 출력하시면 됩니다.
+            
+              <img src="../../images/common/ID.png" alt="" aria-hidden="true" class="icn"/>
+            -->
+            <img src="../../images/common/ID_ON.png" alt="" aria-hidden="true" class="icn"/>
+            <span class="txt">모바일 신분증</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="../../images/common/schedule.png" alt="" aria-hidden="true" class="icn"/>
+            <!-- <img src="../../images/common/schedule_ON.png" alt="" aria-hidden="true" class="icn"/> -->
+            <span class="txt">학사일정</span>
+          </a>
+        </li>
+      </ul>
+      <a href="#" class="centerIcon" aria-label="홈">
+        <img src="../../images/common/home.png" alt="" aria-hidden="true"/>
+      </a>
+      <ul class="iconWrap">
+        <li>
+          <a href="#">
+            <img src="../../images/common/meal.png" alt="" aria-hidden="true" class="icn"/>
+            <!-- <img src="../../images/common/meal_ON.png" alt="" aria-hidden="true" class="icn"/> -->
+            <span class="txt">식단안내</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="../../images/common/notice.png" alt="" aria-hidden="true" class="icn"/>
+            <!-- <img src="../../images/common/notice_ON.png" alt="" aria-hidden="true" class="icn"/> -->
+            <span class="txt">공지사항</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>

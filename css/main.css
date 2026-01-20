@@ -1,0 +1,125 @@
+/* row */
+[class^="row"] {margin-top: 0.75rem;}
+[class^="row"]:first-child {margin-top: 0;}
+[class^="row"]:last-child {margin-bottom: 1rem;}
+
+
+/* id_card 신분증 */
+.id_card {display: flex; align-items: center; justify-content: space-between; gap: 0.75rem; padding: 1.2rem 1.4rem; border-radius: 0.75rem; background: url('../images/common/background_logo.png') no-repeat bottom right; color: var(--color-txt-fff);}
+.id_card .leftWrap {display: flex; flex-direction: column; gap: 0.3rem; width: calc(100% - 3rem - 0.75rem); }
+.id_card .leftWrap .name {font-size: 1rem; font-weight: 700; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+.id_card .leftWrap .distribute {display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; max-height: 3em; overflow: hidden; font-size: 0.7rem; font-weight: 400; opacity: 0.8; word-break: keep-all;}
+.id_card .rightWrap {
+  flex-shrink: 0; 
+  display: inline-flex; 
+  align-items: center; 
+  justify-content: center; 
+  width: 3rem; 
+  height: 3rem; 
+  border-radius: 0.5rem; 
+  background: linear-gradient(-45deg, rgba(255, 255, 255, 0.255) 0%, rgba(255, 255, 255, 0.255) 42%, rgba(255, 255, 255, 0.185) 58%, rgba(255, 255, 255, 0.185) 100%);
+  /* backdrop-filter: blur(4px); */
+  -webkit-backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.145);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.135);
+}
+.id_card .rightWrap img {width: 1.6rem; height: 1.6rem; object-fit: contain;}
+
+
+
+/* id_card 신분증 유저별 색상 */
+.id_card.student {background-color: var(--color-main02);}
+.id_card.student .badge {color: var(--color-main02);}
+.id_card.professor {background-color: var(--color-green);}
+.id_card.professor .badge {color: var(--color-green);}
+.id_card.staff {background-color: var(--color-red);}
+.id_card.staff .badge {color: var(--color-red);}
+
+
+/* link: slick_slider */
+.link .slick_slider {width: 100%;  margin-bottom: 0!important;
+
+  --itemHeight: 4.5rem;
+  --rowGap: 0.5rem;
+  --columnGap: 0.75rem;
+}
+.link .slick_slider div {height: 100%;}
+.link .slick_slider .slick-list {height: calc(var(--itemHeight) * 2 + var(--rowGap));}
+.link .slick_slider .slick-slide {height: 100%; margin: 0 calc(var(--columnGap) / 2);}
+.link .slick_slider .slick-slide ul {display: flex; gap: var(--rowGap) var(--columnGap); flex-wrap: wrap; width: 100%; height: 100%;}
+.link .slick_slider .slick-slide ul li {width: calc((100% - var(--columnGap) * 2) / 3); height: var(--itemHeight);}
+.link .slick_slider .slick-slide ul li a {display: block; width: 100%; height: 100%; background: var(--color-bg-fff); border-radius: 0.75rem; padding: 0.75rem; overflow: hidden; position: relative;}
+.link .slick_slider .slick-slide ul li a p {display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; text-overflow: ellipsis; font-weight: 700; color: var(--color-txt-b3); line-height: 1.2; max-height: 2.4em; overflow: hidden;}
+.link .slick_slider .slick-slide ul li a img {max-width: 1.8rem; max-height: 1.8rem; object-fit: contain; position: absolute; bottom: 0.6rem; right: 0.6rem; font-size: 0; line-height: 0;}
+
+
+/* slick dots */
+.link .slick_slider .slick-dots {display: flex; justify-content: center; align-items: center; gap: 0.3rem; position: relative; bottom: auto; margin-top: 0.5rem;}
+.link .slick_slider .slick-dots li {width: 0.4rem; height: 0.4rem; margin: 0; position: relative;}
+.link .slick_slider .slick-dots li button {width: 0.4rem; height: 0.4rem; padding: 0; border: 0; border-radius: 50%; background: var(--color-bg-ddd); opacity: 0.5; font-size: 0; line-height: 0; cursor: pointer; transition: width 0.3s ease, opacity 0.3s ease, border-radius 0.3s ease; position: relative;}
+.link .slick_slider .slick-dots li button:before {display: none !important;}
+.link .slick_slider .slick-dots li.slick-active {width: 0.95rem;}
+.link .slick_slider .slick-dots li.slick-active button {width: 0.95rem; border-radius: 0.5rem; background: var(--color-main02); opacity: 1;}
+
+
+
+/* link 유저별 설정 */
+.link.student .slick_slider .slick-dots li.slick-active button{background: var(--color-main02);}
+.link.professor .slick_slider .slick-dots li.slick-active button {background: var(--color-green);}
+.link.staff .slick_slider .slick-dots li.slick-active button {background: var(--color-red);}
+.link.staff .slick_slider .slick-dots {display: none;}
+
+
+/* board */
+.board {padding: 0.75rem 1rem 0.9rem; border-radius: 0.75rem; background: var(--color-bg-fff);}
+.board .tab_dep01 {display: flex; align-items: center; justify-content: space-between; gap: 0.75rem; border-bottom: 1px solid var(--color-border-gray4); margin-bottom: 0.75rem;}
+.board .tab_dep01 ul {display: flex; align-items: center; gap: 0.75rem; width: calc(100% - 0.8rem - 0.75rem); height: 2rem; line-height: 2rem;}
+.board .tab_dep01 ul li {display: block; min-width: 3.1rem; max-width: calc((100% - 0.75rem) / 2); position: relative;}
+.board .tab_dep01 ul li:nth-child(n+3) {display: none;}
+.board .tab_dep01 ul li button {display: block; width: 100%; text-align: center; font-size: 0.8rem; color: var(--color-txt-g60); white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+.board .tab_dep01 > a {flex-shrink: 0; display: inline-flex; align-items: center; justify-content: center; width: 0.8rem; height: 0.8rem; line-height: 0.8rem; text-align: center; color: var(--color-txt-b7); font-size: 0.8rem;}
+
+
+
+/* board dep01 tab active */
+.board .tab_dep01 ul li.active::before {content: ""; display: block; width: 100%; height: 2px; background: var(--color-border-b1); position: absolute; bottom: -1px; left: 0;}
+.board .tab_dep01 ul li.active button {font-weight: 700; color: var(--color-txt-b1);}
+
+
+
+/* board dep02 tab */
+.board .tab_dep02 {margin-bottom: 1rem;}
+.board .tab_dep02 ul {display: flex; align-items: center; gap: 0.2rem; width: 100%; height: 1.35rem; line-height: 1.35rem; background-color: var(--color-bg-wg); border-radius: 0.15rem; overflow: hidden;}
+.board .tab_dep02 ul li {flex: 1; min-width: 1.94rem;}
+.board .tab_dep02 ul li:nth-child(n+6) {display: none;}
+.board .tab_dep02 ul li button {display: block; width: 100%; text-align: center; color: var(--color-txt-b6); font-weight: 500; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+
+
+
+/* board dep02 tab active */
+.board .tab_dep02 ul li.active button {font-weight: 600; color: var(--color-txt-fff); background-color: var(--color-bg-b1); border-radius: 0.15rem;}
+
+
+
+/* board list */
+.board .tabConWrap {display: none; flex-direction: column; gap: 0.75rem;}
+.board .tabConWrap.active {display: flex;}
+.board .tabConWrap li a {display: flex; align-items: center; gap: 0.25rem; line-height: 1.2;}
+.board .tabConWrap li a .date {flex-shrink: 0; color: var(--color-txt-b8); font-weight: 500; width: 1.7rem; text-align: center; white-space: nowrap; overflow: hidden;}
+.board .tabConWrap li a .title {flex: 1; color: var(--color-txt-b3); font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+
+
+
+/* board no data */
+.board .tabConWrap:has(li.no-data) {height: 5.6rem;}
+.board .tabConWrap li.no-data {display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; color: var(--color-txt-b8); font-weight: 500;}
+
+
+
+/* 반응형 */
+@media (max-width: 340px) {
+
+  /* link: slick_slider */
+  .link .slick_slider .slick-list {height: calc(var(--itemHeight) * 3 + var(--rowGap) * 2);}
+  .link .slick_slider .slick-slide ul li {width: calc((100% - 0.75rem * 1) / 2);}
+}
