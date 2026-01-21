@@ -93,7 +93,6 @@ html ::-webkit-scrollbar-thumb {border-radius: 5px; background-color:  var(--col
 
 /* #wrap */
 #wrap {height: 100vh; background-color: var(--color-bg-cg); display: flex; flex-direction: column; overflow: hidden;}
-#wrap.login,
 
 
 
@@ -161,7 +160,7 @@ main.menuLayout {padding: 0;
 
 
 /* main - loginLayout */
-main.loginLayout {display: flex; justify-content: center; padding: 0 1rem; padding-top: calc((100vh - 20.7rem) / 2);
+main.loginLayout {display: flex; justify-content: center; padding: 0 1rem; padding-top: calc((100vh - 20.7rem) / 2); background-color: #fff;
 
   /* 로그인 페이지 */
   --paddingBottom: 0;
