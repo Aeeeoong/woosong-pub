@@ -46,7 +46,8 @@
         <div class="studentListWrap">
           <div class="controlWrap">
             <div class="chkBox"><input type="checkbox" id="chkAll" class="mini"><label for="chkAll">전체선택</label></div>
-            <button type="button" class="btn_main01 mini">메세지 전송</button>
+            <!-- ★개발: 메세지 전송 버튼 클릭 시 모달 창이 열립니다. 모달은 하단에 있습니다. -->
+            <button type="button" class="btn_main01 mini" id="messageModalOpen">메세지 전송</button>
           </div>
           <ul class="studentList">
             <!-- ★개발:
@@ -186,6 +187,36 @@
         </div>
       </div>
     </main>  
+    
+    <!-- 메세지 전송 모달 -->
+    <div class="messageModal" role="dialog">
+      <div class="modalWrap">
+        <div class="modalHeader">
+          <p>메세지 전송</p>
+        </div>
+        <div class="modalBody">
+          <ul>
+            <li>
+              <label for="message_title">제목</label>
+              <input type="text" id="message_title" class="small" placeholder="메세지를 입력하세요">
+            </li>
+            <li class="textareaWrap">
+              <label for="message_content">내용</label>
+              <textarea id="message_content" class="small" placeholder="메세지를 입력하세요"></textarea>
+            </li>
+          </ul>
+        </div>
+        <div class="modalFooter">
+          <button type="button" class="btn_sub02 small cancel">
+            취소
+          </button>
+          <button type="submit" class="btn_main01 small send">
+            전송하기
+          </button>
+        </div>
+      </div>
+    </div>
+
     <!--
       ★ 개발
         : 특정 페이지(로그인 페이지, 알림 페이지, 메뉴페이지, 게시판-게시물 페이지) 제외 공통 영역입니다.

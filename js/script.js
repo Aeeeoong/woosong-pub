@@ -110,10 +110,15 @@ $(document).ready(function() {
 
 
   // 아코디언
-  const accordion = $('dl.accordion dt');
+  const accordion = $('dl.accordion');
   if (accordion.length) {
-    accordion.on('click', function() {
-      const $accordion = $(this).closest('dl.accordion');
+    accordion.on('click', function(e) {
+      // 컨텐츠(dd) 영역 클릭은 토글 제외 (내용 클릭 시 접힘 방지)
+      if ($(e.target).closest('dd').length) {
+        return;
+      }
+
+      const $accordion = $(this);
       const $dd = $accordion.find('dd');
       
       if ($accordion.hasClass('active')) {
@@ -132,6 +137,49 @@ $(document).ready(function() {
           $dd.css('max-height', height + 'px');
         }, 10);
       }
+    });
+  }
+
+
+
+  // 교직원메뉴 - 메세지 전송 모달
+  const $messageModal = $('.messageModal');
+  if ($messageModal.length) {
+    const openButtonSelector = '#messageModalOpen';
+
+    const closeMessageModal = function() {
+      $messageModal.removeClass('show');
+    };
+
+    $(document).on('click', openButtonSelector, function() {
+      $messageModal.addClass('show');
+    });
+
+    $(document).on('click', '.messageModal .cancel, .messageModal .modalClose', function() {
+      closeMessageModal();
+    });
+  }
+
+
+
+  // 교직원메뉴 - 교직원 연락처 모달
+  const $contactModal = $('.contactModal');
+  if ($contactModal.length) {
+    const openContactSelector = '.contactWrap > .contactList a.contactInfo';
+
+    const closeContactModal = function() {
+      $contactModal.removeClass('show');
+    };
+
+    // 열기: 리스트의 각 a 클릭
+    $(document).on('click', openContactSelector, function(e) {
+      e.preventDefault();
+      $contactModal.addClass('show');
+    });
+
+    // 닫기: close 버튼
+    $(document).on('click', '.contactModal .modalClose', function() {
+      closeContactModal();
     });
   }
   

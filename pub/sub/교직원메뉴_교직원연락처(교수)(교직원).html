@@ -50,6 +50,7 @@
             <button type="button" class="btn_search" aria-label="검색"></button>
           </div>
         </div>
+
         <ul class="contactList">
           <!-- ★개발: 페이지 로드시 아래의 li만 출력해주시면 됩니다.(로드 시 화면입니다.)
             
@@ -66,6 +67,7 @@
             </li>
           -->
           <li>
+            <!-- ★개발: 각 리스트를 클릭(a태그)하면 해당 데이터에 대한 모달이 열립니다. 모달은 하단에 있습니다. -->
             <a href="#" class="contactInfo">
               <p class="dept">인사기획처</p>
               <div class="infoWrap">
@@ -150,7 +152,67 @@
           </li>
         </ul>
       </div>
-    </main>  
+    </main>
+    
+    <!-- 교직원연락처- 모달 -->
+    <div class="contactModal" role="dialog">
+      <div class="modalWrap">
+        <button type="button" class="modalClose" aria-label="모달 닫기">
+          <i class="ri-close-line" aria-hidden="true"></i>
+        </button>
+        <div class="modalContent">
+          <div class="modalHeader">
+            <p class="modalTitle">김조용</p>
+            <p class="modalSubTitle">
+              <strong class="dept">관리과</strong>
+              <span>총괄팀장</span>
+            </p>
+          </div>
+          <div class="modalBody">
+            <ul class="contactList">
+              <li>
+                <span class="tit">직통번호</span>
+                <p>
+                  <span>042-630-9133</span>
+                  <span class="img">
+                    <img src="../../images/sub/modal_icon01.png" alt="">
+                  </span>
+                </p>
+              </li>
+              <li>
+                <span class="tit">휴대전화</span>
+                <p>
+                  <span>010-8965-2317</span>
+                  <span class="img">
+                    <img src="../../images/sub/modal_icon01.png" alt="">
+                  </span>
+                </p>
+              </li>
+              <li>
+                <span class="tit">이메일</span>
+                <p>
+                  <span>kjy00704@wsu.ac.kr</span>
+                  <span class="img">
+                    <img src="../../images/sub/modal_icon02.png" alt="">
+                  </span>
+                </p>
+              </li>
+            </ul>
+          </div>
+          <!-- ★개발: 연락처 정보가 전부 없는 경우 아래의 modalHeader만 출력해주세요.
+    
+            <div class="modalHeader headerOnly">
+              <p class="modalTitle">김조용</p>
+              <p class="modalSubTitle">
+                <strong class="dept">관리과</strong>
+                <span>총괄팀장</span>
+              </p>
+            </div> 
+          -->
+        </div>
+      </div>
+    </div>
+    
     <!--
       ★ 개발
         : 특정 페이지(로그인 페이지, 알림 페이지, 메뉴페이지, 게시판-게시물 페이지) 제외 공통 영역입니다.
