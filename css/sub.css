@@ -211,13 +211,13 @@
 .courseInfoWrap .courseList > li + li {margin-top: 0.5rem;}
 .courseInfoWrap .courseList .box_st1 {border: 1px solid var(--color-border-gray7);}
 .courseInfoWrap .courseList .badgeBox {display: flex; align-items: center; gap: 0.25rem;}
-.courseInfoWrap .courseList .innerbox {margin-top: 0.4rem;}
-.courseInfoWrap .courseList .innerbox > li {padding-top: 0.25rem;}
-.courseInfoWrap .courseList .innerbox > li.top {padding: 0.25rem 0;}
-.courseInfoWrap .courseList .innerbox > li + li {border-top: 1px solid var(--color-border-gray7);}
-.courseInfoWrap .courseList .innerbox > li > p {color: var(--color-txt-b7);}
-.courseInfoWrap .courseList .innerbox > li.bottom {font-size: 0.6rem;}
-.courseInfoWrap .courseList .innerbox > li.bottom .time {font-weight: 700;}
+.courseInfoWrap .courseList .innerbox {margin-top: 0.5rem;}
+.courseInfoWrap .courseList .innerbox > p {color: var(--color-txt-b7);}
+.courseInfoWrap .courseList .innerbox > p.top {padding-bottom: 0.25rem;}
+.courseInfoWrap .courseList .innerbox > p.top strong {display: block;}
+.courseInfoWrap .courseList .innerbox > p + p {border-top: 1px solid var(--color-border-gray7);}
+.courseInfoWrap .courseList .innerbox > .bottom {padding-top: 0.25rem; font-size: 0.6rem;}
+.courseInfoWrap .courseList .innerbox > .bottom .time {display: block; font-weight: 700;}
 
 
 
@@ -261,13 +261,13 @@
 /* 교직원메뉴_급여내역서(교수)(교직원) */
 .salaryList .innerbox {display: flex; flex-direction: column;}
 .salaryList .innerbox + .innerbox {margin-top: 1.5rem;}
-.salaryList .innerbox > li {display: flex; justify-content: space-between; width: 100%;}
-.salaryList .innerbox > li + li {border-top: 1px solid var(--color-border-gray7);}
-.salaryList .innerbox > li.top {padding-bottom: 0.75rem;}
-.salaryList .innerbox > li.top span.total {font-weight: 700; color: var(--color-txt-b7);}
-.salaryList .innerbox > li.top span.total em {font-size: 0.8rem; color: var(--color-main02); margin-right: 0.2rem;}
-.salaryList .innerbox > li.top span.total.type2 em{color: var(--color-txt-b2);}
-.salaryList .innerbox .bottom {width: 100%; padding-top: 0.75rem;}
+.salaryList .innerbox .top {display: flex; justify-content: space-between; width: 100%;}
+.salaryList .innerbox .top {padding-bottom: 0.75rem;}
+.salaryList .innerbox .top span.total {font-weight: 700; color: var(--color-txt-b7);}
+.salaryList .innerbox .top span.total em {font-size: 0.8rem; color: var(--color-main02); margin-right: 0.2rem;}
+.salaryList .innerbox .top span.total.type2 em {color: var(--color-txt-b2);}
+
+.salaryList .innerbox .bottom {width: 100%; padding-top: 0.75rem; border-top: 1px solid var(--color-border-gray8);}
 .salaryList .innerbox .bottom > li {display: flex; justify-content: space-between; width: 100%;}
 .salaryList .innerbox .bottom > li + li {padding-top: 0.5rem;}
 .salaryList .innerbox .bottom > li span {color: var(--color-txt-b7); font-weight: 500;}

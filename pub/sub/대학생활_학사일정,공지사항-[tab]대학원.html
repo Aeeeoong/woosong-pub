@@ -26,13 +26,11 @@
 <body data-header-scroll="true">
   <div id="wrap">
     <header class="subLayout">
-      <button type="button" aria-label="뒤로 가기">
-        <i class="ri-arrow-left-s-line" aria-hidden="true"></i>
-      </button>
+      <button type="button" aria-label="뒤로 가기"><i class="ri-arrow-left-s-line" aria-hidden="true"></i></button>
       <h1 class="tit1">학사일정</h1>
     </header>
     <main class="subLayout">
-      <div class="tab_st1">
+      <div class="tab_st1 scroll">
         <ul>
           <!-- ★ 개발: 활성화 탭에 on 클래스 추가해주시면 됩니다. -->
           <li class="on"><a href="#"><span>학사일정</span></a></li>
@@ -55,6 +53,11 @@
             <h4 class="tit4">2026.01</h4>
             <ul>
               <li class="bu_st1">
+                <!-- 
+                  ★ 개발: 
+                  date 클래스에 event(파란색 강조), holiday(빨간색 강조)
+                  추가해주시면 됩니다. 
+                -->
                 <p class="date">2~9</p>
                 <p class="content">학위청구논문/사례연구 최종본 제출</p>
                 <p class="content">겨울학기 재학생 장학신청</p>
@@ -109,6 +112,7 @@
                 <p class="content">1학기 재학생 등록기간</p>
               </li>
               <li class="bu_st1">
+                <!-- ★ 개발: event 클래스 예시입니다. (파란색 강조) -->
                 <p class="date event">25~27</p>
                 <p class="content">신입생 수강신청 기간</p>
               </li>
@@ -118,6 +122,7 @@
             <h4 class="tit4">2026.03</h4>
             <ul>
               <li class="bu_st1">
+                <!-- ★ 개발: holiday 클래스 예시입니다. (빨간색 강조) -->
                 <p class="date holiday">1</p>
                 <p class="content">삼일절</p>
                 <p class="content">학기 개시일</p>

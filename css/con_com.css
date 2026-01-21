@@ -811,3 +811,13 @@ dl.accordion.active dt::before {transform: translateY(-50%) rotate(180deg);}
 	/* 테이블 */
 	div[class*='tbl_st'] > table.widthType2 {width: 340px;}
 }
+
+
+@media screen and (max-width: 320px) {
+
+  /* input small */
+  select.small, input:not(input[type^='checkbox']).small {padding: 0 0.5rem;}
+
+  /* textarea */
+  textarea.small {padding: 0.35rem 0.5rem;}
+}
