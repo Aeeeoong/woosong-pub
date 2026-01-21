@@ -453,7 +453,7 @@
 
 
   /* 교직원메뉴_교직원연락처(교수)(교직원) - 모달 */
-  .contactModal .modalBody .contactList > li p .img {display: none;}
+  .contactModal .modalBody .contactList > li .tit {display: none;}
 
 
   /* 교직원메뉴_교직원연락처(교수)(교직원) */

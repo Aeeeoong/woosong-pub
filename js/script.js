@@ -224,6 +224,76 @@ $(document).ready(function() {
 
 
   
+  // tab_st2.scroll - 좌/우 스크롤 힌트(그라데이션)
+  const tabSt2Scroll = $('.tab_st2.scroll');
+  if (tabSt2Scroll.length) {
+    const threshold = 2; // 오차/소수점 대비
+
+    const updateScrollHint = function($wrap) {
+      const $ul = $wrap.children('ul').first();
+      const el = $ul.get(0);
+      if (!el) {
+        return;
+      }
+
+      const maxScroll = el.scrollWidth - el.clientWidth;
+      if (maxScroll <= threshold) {
+        $wrap.removeClass('has-left has-right');
+        return;
+      }
+
+      const left = el.scrollLeft;
+      $wrap.toggleClass('has-left', left > threshold);
+      $wrap.toggleClass('has-right', left < maxScroll - threshold);
+    };
+
+    // 각 ul 스크롤에 반응
+    tabSt2Scroll.each(function() {
+      const $wrap = $(this);
+      const $ul = $wrap.children('ul').first();
+      if (!$ul.length) {
+        return;
+      }
+
+      let ticking = false;
+      const schedule = function() {
+        if (ticking) {
+          return;
+        }
+        ticking = true;
+        window.requestAnimationFrame(function() {
+          ticking = false;
+          updateScrollHint($wrap);
+        });
+      };
+
+      $ul.on('scroll', schedule);
+
+      // 초기(로드/레이아웃 안정화 이후) 상태 반영
+      updateScrollHint($wrap);
+      setTimeout(function() {
+        updateScrollHint($wrap);
+      }, 0);
+    });
+
+    // 리사이즈 시 전체 갱신
+    let resizeTicking = false;
+    $(window).on('resize', function() {
+      if (resizeTicking) {
+        return;
+      }
+      resizeTicking = true;
+      window.requestAnimationFrame(function() {
+        resizeTicking = false;
+        tabSt2Scroll.each(function() {
+          updateScrollHint($(this));
+        });
+      });
+    });
+  }
+
+
+  
   // meal_txt 내부의 <br> 태그 처리
   const mealTxt = $('.meal_txt');
   if (mealTxt.length) {
