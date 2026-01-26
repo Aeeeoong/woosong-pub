@@ -183,13 +183,17 @@ main.loginLayout {display: flex; justify-content: center; padding: 0 1rem; paddi
 #bottomNavigation .bg span.circleBoxShadow {width: var(--bottonNavigationCircleSize); height: var(--bottonNavigationCircleSize); border-radius: 50%; border: 1px solid var(--color-border-gray5); box-shadow: var(--bottonNavigationShadow); left: 50%; top: 0; transform: translateX(-50%); z-index: 1;}
 #bottomNavigation .bg span.rectangle {width: 100%; height: calc(100% - var(--bottonNavigationPaddingTop)); border-radius: var(--bottonNavigationBorderRadius) var(--bottonNavigationBorderRadius) 0 0; border-top: 1px solid var(--color-border-gray5); background-color: #fff; box-shadow: var(--bottonNavigationShadow); left: 0; bottom: 0; z-index: 2;}
 #bottomNavigation .bg span.circleBorderDelete {width: calc(var(--bottonNavigationCircleSize) - 2px); height: calc(var(--bottonNavigationCircleSize) - 2px); border-radius: 50%; left: 50%; top: 1px; transform: translateX(-50%); z-index: 3;}
-#bottomNavigation .centerIcon {flex-shrink: 0; display: flex; align-items: center; justify-content: center; width: 2.5rem; height: 2.5rem; border-radius: 50%; background: linear-gradient(135deg, rgba(167, 246, 255, 0), rgba(167, 246, 255, 0.2)) var(--color-main02); color: var(--color-txt-fff); position: absolute; top: calc(var(--bottonNavigationPaddingTop) - 0.15rem); left: 50%; transform: translateX(-50%); z-index: 4;}
+#bottomNavigation .centerIcon {flex-shrink: 0; display: flex; align-items: center; justify-content: center; width: 2.5rem; height: 2.5rem; border-radius: 50%; color: var(--color-txt-fff); position: absolute; top: calc(var(--bottonNavigationPaddingTop) - 0.15rem); left: 50%; transform: translateX(-50%); z-index: 4;}
 #bottomNavigation .iconWrap {flex: 1; display: flex; gap: var(--iconGap); padding: 0.6rem var(--iconGap) 0; z-index: 4;}
 #bottomNavigation .iconWrap li {width: calc((100% - var(--iconGap) * 1) / 2);}
 #bottomNavigation .iconWrap li a {display: flex; align-items: center; flex-direction: column; gap: 0.4rem;}
 #bottomNavigation .iconWrap li a .icn {width: 1.1rem; height: 1.1rem; object-fit: contain;}
 #bottomNavigation .iconWrap li a .txt {display: block; width: 100%; overflow: hidden; font-size: 0.6rem; font-weight: 500; color: var(--color-txt-b7); line-height: 1.2; height: 2.4em; text-align: center; letter-spacing: -1px; padding: 0 0.1em; word-break: keep-all;}
 
+
+#bottomNavigation.student .centerIcon {background: linear-gradient(135deg, rgba(167, 246, 255, 0), rgba(167, 246, 255, 0.2)) var(--color-main02);}
+#bottomNavigation.professor .centerIcon {background: linear-gradient(135deg, rgba(167, 246, 255, 0), rgba(167, 246, 255, 0.2)) var(--color-green);}
+#bottomNavigation.staff .centerIcon {background: linear-gradient(135deg, rgba(167, 246, 255, 0), rgba(167, 246, 255, 0.2)) var(--color-red);}
 
 
 /* 반응형 */
