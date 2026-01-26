@@ -60,13 +60,20 @@
           <!-- ★ 개발: 초기 10개의 공지메세지 표시, 하단의 더보기 클릭 시 10개씩 추가 표시됩니다. -->
           <li>
             <div class="delBtnWrap">
+              <!-- ★ 개발: 
+                - 공지 구분에 따라 "학교공지" 대신 "학과공지", "수업공지", "지도교수공지"를 출력해주시면 됩니다. 
+                - 구분이 없을 경우 span 태그 삭제해주시면 됩니다.
+              -->
+              <span class="badge_st3">학교공지</span>
               <!-- ★ 개발: 공지메세지 삭제 버튼입니다. -->
               <button type="button" class="delBtn">
                 <i class="ri-close-large-line" aria-hidden="true" aria-label="알림 삭제"></i>
               </button>
             </div>
             <a href="#">
-              <h3 class="tit3">2026학년도 1학기 학자금대출 제도 안내</h3>
+              <!-- ★ 개발: 공지메세지 새로운 메세지일 경우 h3 태그에 new 클래스 추가해주시면 됩니다. -->
+              <h3 class="tit3 new">
+                2026학년도 1학기 학자금대출 제도 안내</h3>
               <p>
                 <span>보낸날짜: <em>01. 07 11:58</em></span>
                 <span>확인날짜: <em>01. 07 11:58</em></span>
@@ -75,6 +82,7 @@
           </li>
           <li>
             <div class="delBtnWrap">
+              <!-- ★ 개발: 공지 구분이 없는 경우 예시입니다. -->
               <button type="button" class="delBtn">
                 <i class="ri-close-large-line" aria-hidden="true" aria-label="알림 삭제"></i>
               </button>

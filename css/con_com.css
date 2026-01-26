@@ -220,6 +220,9 @@ ul + .bu_warn {margin-top: 1rem;}
 .badge_st2.type3 {background: var(--color-light-blue); color: var(--color-main02);}
 .badge_st2.type4 {background: var(--color-bg-wg); color: var(--color-txt-g60);}
 
+/* 뱃지 스타일3 */
+.badge_st3 {display: inline-flex; align-items: center; justify-content: center; border-radius: 1rem; background: var(--color-bg-wg);  padding: 0.2rem 0.65rem; line-height: 1; font-size: 0.6rem; font-weight: 500; color: var(--color-txt-g60);}
+
 /* 탭 : 공통 */
 div[class^="tab_st"] {position: relative;
 
