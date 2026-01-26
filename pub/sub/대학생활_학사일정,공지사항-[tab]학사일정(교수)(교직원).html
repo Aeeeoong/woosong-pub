@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+
+  <!-- css -->
+  <link rel="stylesheet" href="../../css/basic.css">
+  <link rel="stylesheet" href="../../css/layout.css">
+  <link rel="stylesheet" href="../../css/con_com.css">
+  <link rel="stylesheet" href="../../css/sub.css">
+
+  
+  <!-- js -->
+  <script src="../../js/jquery-3.7.1.min.js"></script>
+  <script type="text/javascript" src="../../js/script.js"></script>
+
+
+  <!-- font -->
+  <link rel="stylesheet" href="../../font/Pretendard/fonts.css" media="all">
+  <link rel="stylesheet" href="../../font/Remixicon/remixicon.css" media="all">
+
+</head>
+<body data-header-scroll="true">
+  <div id="wrap">
+    <header class="subLayout">
+      <button type="button" aria-label="뒤로 가기"><i class="ri-arrow-left-s-line" aria-hidden="true"></i></button>
+      <h1 class="tit1">학사일정</h1>
+    </header>
+    <main class="subLayout">
+      <div class="tab_st1 scroll">
+        <ul>
+          <!-- ★ 개발: 활성화 탭에 on 클래스 추가해주시면 됩니다. -->
+          <li><a href="#"><span>정보광장</span></a></li>
+          <li class="on"><a href="#"><span>학사일정</span></a></li>
+          <li><a href="#"><span>공지사항</span></a></li>
+        </ul>
+      </div>
+      <div class="selectBox type3">
+        <!-- ★ 개발 : 현재 앱 기준으로 selected 처리하였습니다. -->
+        <div class="selectBox_item">
+          <label for="yearSelect" class="sr-only">학년도 선택</label>
+          <select id="yearSelect" class="small">
+            <option selected>2025</option>
+            <option>2026</option>
+          </select>
+        </div>
+        <!-- ★ 개발 : 현재 앱 기준으로 selected 처리하였습니다. -->
+        <div class="selectBox_item">
+          <label for="semesterSelect" class="sr-only">학기 선택</label>
+          <select id="semesterSelect" class="small">
+            <option>선택</option>
+            <option>1학기</option>
+            <option>여름학기</option>
+            <option>2학기</option>
+            <option selected>겨울학기</option>
+          </select>
+        </div>
+      </div>
+      <div class="contentWrap type2">
+        <ul class="listWrap">
+          <li>
+            <h4 class="tit4">2025.10<span>(2025 겨울학기)</span></h4>
+            <ul>
+              <li class="bu_st1">
+                <p class="date">10.01~02.27</p>
+                <p class="content"><span class="badge type4">등록</span>납부확인서출력(학생)</p>
+              </li>
+              <li class="bu_st1">
+                <p class="date">10.01~12.31</p>
+                <p class="content"><span class="badge type4">등록</span>교육비납입증명서출력(학생)</p>
+              </li>
+              <li class="bu_st1">
+                <p class="date">10.21~12.19</p>
+                <p class="content"><span class="badge type4">수업</span>교육과정표 등록/일괄삭제(학과)</p>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h4 class="tit4">2025.11<span>(2025 겨울학기)</span></h4>
+            <ul>
+              <li class="bu_st1">
+                <p class="date">11.03~11.21</p>
+                <p class="content"><span class="badge type4">수업</span>개설강좌 조정 및 분반 처리(학과)</p>
+              </li>
+              <li class="bu_st1">
+                <p class="date">11.10~11.21</p>
+                <p class="content"><span class="badge type4">수업</span>시간표등록(학과)</p>
+              </li>
+              <li class="bu_st1">
+                <p class="date">11.11~01.02</p>
+                <p class="content"><span class="badge type4">학적</span>복학신청기간(학생)</p>
+              </li>
+              <li class="bu_st1">
+                <p class="date">11.17~01.23</p>
+                <p class="content"><span class="badge type4">수업</span>시간표변경 신청기간</p>
+              </li>
+              <li class="bu_st1">
+                <p class="date">11.24~11.25</p>
+                <p class="content"><span class="badge type4">수업</span>수강신청목록 조회기간</p>
+              </li>
+              <li class="bu_st1">
+                <p class="date">11.24~12.10</p>
+                <p class="content"><span class="badge type4">수업</span>강좌개설대상학과조정기간(조교용)</p>
+              </li>
+              <li class="bu_st1">
+                <p class="date">11.25~11.29</p>
+                <p class="content"><span class="badge type4">수업</span>수준별수업운영 신청기간</p>
+              </li>
+              <li class="bu_st1">
+                <p class="date">11.26~11.28</p>
+                <p class="content"><span class="badge type4">수업</span>신편입생 신청기간</p>
+                <p class="content"><span class="badge type4">수업</span>재학생 신청기간</p>
+              </li>
+              <li class="bu_st1">
+                <p class="date">11.27</p>
+                <p class="content"><span class="badge type4">수업</span>수강분반이동</p>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h4 class="tit4">2025.12<span>(2025 겨울학기)</span></h4>
+            <ul>
+              <li class="bu_st1">
+                <p class="date">12.01~07.31</p>
+                <p class="content"><span class="badge type4">등록</span>등록적용</p>
+              </li>
+              <li class="bu_st1">
+                <p class="date">12.01~12.05</p>
+                <p class="content"><span class="badge type4">등록</span>분납신청기간(학생)</p>
+              </li>
+              <li class="bu_st1">
+                <p class="date">12.01~01.29</p>
+                <p class="content"><span class="badge type4">등록</span>분납접수증출력(학생)</p>
+                <p class="content"><span class="badge type4">등록</span>고지서출력(학생)</p>
+                <p class="content"><span class="badge type4">등록</span>고지서출력(4학년)</p>
+                <p class="content"><span class="badge type4">등록</span>고지서출력(교환학생)</p>
+                <p class="content"><span class="badge type4">등록</span>고지서출력(협약생)</p>
+              </li>
+              <li class="bu_st1">
+                <p class="date">12.05~12.12</p>
+                <p class="content"><span class="badge type4">수업</span>학점교류신청기간(학생)</p>
+              </li>
+              <li class="bu_st1">
+                <p class="date">12.08~12.10</p>
+                <p class="content"><span class="badge type4">수업</span>수강변경신청(학생)</p>
+                <p class="content"><span class="badge type4">수업</span>수강정정</p>
+              </li>
+              <li class="bu_st1">
+                <p class="date">12.08~12.26</p>
+                <p class="content"><span class="badge type4">등록</span>FlyWire 수납처리기간</p>
+                <p class="content"><span class="badge type4">등록</span>0원 등록급 수납처리(수납처리기간)</p>
+              </li>
+              <li class="bu_st1">
+                <p class="date">12.22~12.31</p>
+                <!-- ★개발 : "학사공통" → "공통"으로 두 글자로 통일시켜주시면 됩니다. -->
+                <p class="content"><span class="badge type4">공통</span>수업일수(~1/3)</p>
+              </li>
+              <li class="bu_st1">
+                <p class="date">12.22~01.12</p>
+                <p class="content"><span class="badge type4">학적</span>군휴학신청기간(학생)</p>
+              </li>
+              <li class="bu_st1">
+                <p class="date">12.22~01.23</p>
+                <p class="content"><span class="badge type4">수업</span>수업년도학기</p>
+                <p class="content"><span class="badge type4">공통</span>학기개시일</p>
+                <p class="content"><span class="badge type4">수업</span>공결신청기간</p>
+                <p class="content"><span class="badge type4">수업</span>출석등록기간</p>
+                <p class="content"><span class="badge type4">공통</span>학기기간</p>
+              </li>
+              <li class="bu_st1">
+                <p class="date">12.24~01.16</p>
+                <p class="content"><span class="badge type4">수업</span>특별시험 통과 인정 신청 기간(학생)</p>
+              </li>
+              <li class="bu_st1">
+                <p class="date">12.24~01.19</p>
+                <p class="content"><span class="badge type4">수업</span>특별시험 통과 인정 승인 기간</p>
+              </li>
+              <li class="bu_st1">
+                <p class="date">12.24~01.21</p>
+                <p class="content"><span class="badge type4">수업</span>특별시험 학점 인정 신청 기간(학생)</p>
+              </li>
+              <li class="bu_st1">
+                <p class="date">12.24~01.23</p>
+                <p class="content"><span class="badge type4">수업</span>특별시험 학점 인정 승인 기간</p>
+              </li>
+              <li class="bu_st1">
+                <p class="date">12.29~01.09</p>
+                <p class="content"><span class="badge type4">수업</span>강의계획서등록</p>
+              </li>
+              <li class="bu_st1">
+                <p class="date">12.31~01.02</p>
+                <p class="content"><span class="badge type4">수업</span>수강철회(1차)</p>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h4 class="tit4">2026.01<span>(2025 겨울학기)</span></h4>
+            <ul>
+              <li class="bu_st1">
+                <p class="date">01.02~01.12</p>
+                <p class="content"><span class="badge type4">공통</span>수업일수(~2/3)</p>
+              </li>
+              <li class="bu_st1">
+                <p class="date">01.08~01.09</p>
+                <p class="content"><span class="badge type4">수업</span>수강철회(2차)</p>
+              </li>
+              <li class="bu_st1">
+                <p class="date">01.12~01.16</p>
+                <p class="content"><span class="badge type4">수업</span>수업소감설문</p>
+              </li>
+              <li class="bu_st1">
+                <p class="date">01.13~01.17</p>
+                <p class="content"><span class="badge type4">수업</span>전공능력문항생성(조교용)</p>
+                <p class="content"><span class="badge type4">수업</span>전공능력성취도평가(학생용)</p>
+              </li>
+              <li class="bu_st1">
+                <p class="date">01.13~01.23</p>
+                <p class="content"><span class="badge type4">공통</span>수업일수(~3/3)</p>
+              </li>
+              <li class="bu_st1">
+                <p class="date">01.20~01.24</p>
+                <p class="content"><span class="badge type4">수업</span>전공능력등록(조교용)</p>
+              </li>
+              <li class="bu_st1">
+                <p class="date">01.26~01.27</p>
+                <p class="content"><span class="badge type4">수업</span>설문미실시자성적조회제한기간</p>
+              </li>
+              <li class="bu_st1">
+                <p class="date">01.26~01.30</p>
+                <p class="content"><span class="badge type4">수업</span>수강설문결과조회(교수)</p>
+                <p class="content"><span class="badge type4">수업</span>수강설문 교수의견등록</p>
+                <p class="content"><span class="badge type4">수업</span>CQI 등록기간</p>
+                <p class="content"><span class="badge type4">성적</span>성적정정</p>
+                <p class="content"><span class="badge type4">성적</span>교수성적처리</p>
+                <p class="content"><span class="badge type4">성적</span>성적공고</p>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </main>
+    <!--
+      ★ 개발
+        : 특정 페이지(로그인 페이지, 알림 페이지, 메뉴페이지, 게시판-게시물 페이지) 제외 공통 영역입니다.
+        : 혹시나 싶어 필요한 html마다 모두 넣어두었으니, 참고 부탁드립니다.
+        : 사용자 별로 class에 추가해주시면 됩니다.(학생: student, 교수: professor, 교직원: staff)
+    -->
+    <div id="bottomNavigation" class="student">
+      <div class="bg">
+        <span class="circleBoxShadow"></span>
+        <span class="rectangle"></span>
+        <span class="circleBorderDelete"></span>
+      </div>
+      <ul class="iconWrap">
+        <li>
+          <a href="#">
+            <!--
+              ★개발: '모바일 신분증' 메뉴일 시 아래 이미지 출력
+              <img src="../../images/common/ID_ON.png" alt="" aria-hidden="true" class="icn"/>
+            -->
+            <img src="../../images/common/ID.png" alt="" aria-hidden="true" class="icn"/>
+            <span class="txt">모바일 신분증</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <!--
+              ★개발: '학사일정' 메뉴일 시 아래 이미지 출력
+              <img src="../../images/common/schedule_ON.png" alt="" aria-hidden="true" class="icn"/>
+            -->
+            <img src="../../images/common/schedule.png" alt="" aria-hidden="true" class="icn"/>
+            <span class="txt">학사일정</span>
+          </a>
+        </li>
+      </ul>
+      <a href="#" class="centerIcon" aria-label="홈">
+        <img src="../../images/common/home.png" alt="" aria-hidden="true"/>
+      </a>
+      <ul class="iconWrap">
+        <li>
+          <a href="#">
+            <!--
+              ★개발: '식단안내' 메뉴일 시 아래 이미지 출력
+              <img src="../../images/common/meal_ON.png" alt="" aria-hidden="true" class="icn"/>
+            -->
+            <img src="../../images/common/meal.png" alt="" aria-hidden="true" class="icn"/>
+            <span class="txt">식단안내</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <!--
+              ★개발: '공지사항' 메뉴일 시 아래 이미지 출력
+              <img src="../../images/common/notice_ON.png" alt="" aria-hidden="true" class="icn"/>
+            -->
+            <img src="../../images/common/notice.png" alt="" aria-hidden="true" class="icn"/>
+            <span class="txt">공지사항</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>

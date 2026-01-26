@@ -100,7 +100,7 @@
 
 
 
-/* 대학생활_학사일정 */
+/* 대학생활_학사일정-[tab]학사일정 공통 */
 .contentWrap {padding: 1rem 0.9rem; background-color: var(--color-bg-fff); border-radius: 0.75rem; margin-bottom: 0.75rem;}
 .contentWrap .listWrap {margin-top: 1.25rem;}
 .contentWrap .listWrap > li + li {margin-top: 1.5rem;}
@@ -113,6 +113,15 @@
 .contentWrap .listWrap > li ul li:has(p.date.holiday)::before {background: var(--color-red);}
 .contentWrap .listWrap > li ul li p.date.holiday + p.content,
 .contentWrap .listWrap > li ul li p.date.event + p.content {font-weight: 700;}
+
+
+
+/* 대학생활_학사일정,공지사항-[tab]학사일정(교수)(교직원) */
+.contentWrap.type2 .listWrap {margin-top: 0;}
+.contentWrap.type2 .listWrap > li h4 span {font-weight: 500; margin-left: 0.15rem;}
+.contentWrap.type2 .listWrap > li ul li + li {margin-top: 0.6rem;}
+.contentWrap.type2 .listWrap > li ul li p.content {padding-left: 2.4rem; position: relative;}
+.contentWrap.type2 .listWrap > li ul li p.content > span {position: absolute; top: 0.05rem; left: 0;}
 
 
 

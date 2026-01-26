@@ -212,6 +212,7 @@ ul + .bu_warn {margin-top: 1rem;}
 .badge.type1 {background: var(--color-txt-fff); color: var(--color-main02);}
 .badge.type2 {background: var(--color-light-blue); color: var(--color-main02);}
 .badge.type3 {background: var(--color-bg-wg); color: var(--color-txt-g60);}
+.badge.type4 {background: var(--color-txt-fff); color: var(--color-main02); border: 1px solid var(--color-main02); width: 2.1rem; height: 1rem; padding: 0.2rem 0.5rem;}
 
 /* 뱃지 스타일2 */
 .badge_st2 {display: inline-flex; align-items: center; justify-content: center; width: fit-content; height: 1rem; border-radius: 0.15rem; padding: 0 0.5rem; line-height: 1; font-size: 0.6rem; font-weight: 500;}
@@ -426,6 +427,7 @@ select.small {min-width: 5rem; height: 1.75rem; line-height: 1.75rem; padding: 0
 
 .selectBox {display: flex; gap: 0.35rem; margin-bottom: 0.75rem;}
 .selectBox.type2 {margin-bottom: 0;}
+.selectBox.type3 {margin-top: 0.65rem;}
 .selectBox .selectBox_item {width: calc((100% - 0.35rem) / 2);}
 .selectBox .selectBox_item select {width: 100%;}
 
@@ -492,7 +494,7 @@ input[type="date"]::-webkit-calendar-picker-indicator{ opacity:0; z-index: 1; cu
 	--lineHeight : 0.9rem;
 }
 .searchBox .select_wrap {position: relative; display: flex; align-items: center; min-width: 3.4rem;}
-.searchBox .select_wrap select {min-width: auto; width: 100%; height: 100%; line-height: var(--lineHeight); padding: 0 1rem 0 0; border: none; background-color: transparent; background-position: right 0.4rem center; color: var(--color-txt-b4); font-size: 0.6rem; }
+.searchBox .select_wrap select {min-width: auto; width: 100%; height: 100%; line-height: var(--lineHeight); padding: 0 1.1rem 0 0; border: none; background-color: transparent; background-position: right 0.4rem center; color: var(--color-txt-b4); font-size: 0.6rem; }
 .searchBox .divider { width: 1px; height: 100%; background-color: var(--color-txt-g40); flex-shrink: 0; }
 .searchBox .input_wrap { flex: 1; position: relative; display: flex; align-items: center; padding: 0 0.5rem; }
 .searchBox .input_wrap input[type="text"] { flex: 1; width: 100%; height: 100%; line-height: var(--lineHeight); padding: 0 0 0 0.25rem; border: none; background-color: transparent; border-radius: 0; min-width: auto; color: var(--color-txt-b6); font-size: 0.6rem; }
