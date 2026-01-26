@@ -49,7 +49,7 @@
 .link .slick_slider .slick-slide ul {display: flex; gap: var(--rowGap) var(--columnGap); flex-wrap: wrap; width: 100%; height: 100%;}
 .link .slick_slider .slick-slide ul li {width: calc((100% - var(--columnGap) * 2) / 3); height: var(--itemHeight);}
 .link .slick_slider .slick-slide ul li a {display: block; width: 100%; height: 100%; background: var(--color-bg-fff); border-radius: 0.75rem; padding: 0.75rem; overflow: hidden; position: relative;}
-.link .slick_slider .slick-slide ul li a p {display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; text-overflow: ellipsis; font-weight: 700; color: var(--color-txt-b3); line-height: 1.2; max-height: 2.4em; overflow: hidden; word-break: keep-all;}
+.link .slick_slider .slick-slide ul li a p {display: block; font-weight: 700; color: var(--color-txt-b3); line-height: 1.2; max-height: 2.4em; overflow: hidden; word-break: keep-all;}
 .link .slick_slider .slick-slide ul li a img {max-width: 1.8rem; max-height: 1.8rem; object-fit: contain; position: absolute; bottom: 0.6rem; right: 0.6rem; font-size: 0; line-height: 0;}
 
 
@@ -70,6 +70,7 @@
 .link.staff .slick_slider .slick-dots {display: none;}
 
 
+
 /* board */
 .board {padding: 0.75rem 1rem 0.9rem; border-radius: 0.75rem; background: var(--color-bg-fff);}
 .board .tab_dep01 {display: flex; align-items: center; justify-content: space-between; gap: 0.75rem; border-bottom: 1px solid var(--color-border-gray4); margin-bottom: 0.75rem;}
@@ -87,20 +88,6 @@
 
 
 
-/* board dep02 tab */
-.board .tab_dep02 {margin-bottom: 1rem;}
-.board .tab_dep02 ul {display: flex; align-items: center; gap: 0.2rem; width: 100%; height: 1.35rem; line-height: 1.35rem; background-color: var(--color-bg-wg); border-radius: 0.15rem; overflow: hidden;}
-.board .tab_dep02 ul li {flex: 1; min-width: 1.94rem;}
-.board .tab_dep02 ul li:nth-child(n+6) {display: none;}
-.board .tab_dep02 ul li button {display: block; width: 100%; text-align: center; color: var(--color-txt-b6); font-weight: 500; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
-
-
-
-/* board dep02 tab active */
-.board .tab_dep02 ul li.active button {font-weight: 600; color: var(--color-txt-fff); background-color: var(--color-bg-b1); border-radius: 0.15rem;}
-
-
-
 /* board list */
 .board .tabConWrap {display: none; flex-direction: column; gap: 0.75rem;}
 .board .tabConWrap.active {display: flex;}
@@ -111,8 +98,8 @@
 
 
 /* board no data */
-.board .tabConWrap:has(li.no-data) {height: 5.6rem;}
-.board .tabConWrap li.no-data {display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; color: var(--color-txt-b8); font-weight: 500;}
+.board .tabConWrap:has(li.no_data) {height: 5.6rem;}
+.board .tabConWrap li.no_data {display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; color: var(--color-txt-b8); text-align: center;}
 
 
 

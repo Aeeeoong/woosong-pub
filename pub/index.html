@@ -301,12 +301,10 @@
 
               탭(data-tab-value)
               - 1차 탭: data-tab-value, 예시- tab01, tab02
-              - 2차 탭: data-tab-value, 예시- sub01, sub02, sub03, sub04, sub05
 
               리스트와 연결(data-tab)
-              - 1차 탭 첫번째(tab01) + 2차 탭 첫번째(sub01) => 리스트 연결 data-tab="tab01-sub01"
-              - 1차 탭 첫번째(tab01) + 2차 탭 두번째(sub02) => 리스트 연결 data-tab="tab01-sub02"
-              - 1차 탭 두번째(tab02) + 2차 탭 첫번째(sub01) => 리스트 연결 data-tab="tab02-sub01"
+              - 1차 탭 첫번째(tab01) => 리스트 연결 data-tab="tab01"
+              - 1차 탭 두번째(tab02) => 리스트 연결 data-tab="tab02"
             -->
             <!-- ★ 개발: data-tab-value="tab01" -->
             <li class="active" data-tab-value="tab01">
@@ -321,32 +319,8 @@
             <i class="ri-add-line"></i>
           </a>
         </div>
-        <div class="tab_dep02">
-          <ul>
-            <!-- ★ 개발: data-tab-value="sub01" -->
-            <li class="active" data-tab-value="sub01">
-              <button type="button">일반</button>
-            </li>
-            <!-- ★ 개발: data-tab-value="sub02" -->
-            <li data-tab-value="sub02">
-              <button type="button">학사</button>
-            </li>
-            <!-- ★ 개발: data-tab-value="sub03" -->
-            <li data-tab-value="sub03">
-              <button type="button">장학</button>
-            </li>
-            <!-- ★ 개발: data-tab-value="sub04" -->
-            <li data-tab-value="sub04">
-              <button type="button">입시</button>
-            </li>
-            <!-- ★ 개발: data-tab-value="sub05" -->
-            <li data-tab-value="sub05">
-              <button type="button">취업</button>
-            </li>
-          </ul>
-        </div>
-        <!-- 공지사항 + 일반 : data-tab="tab01-sub01" -->
-        <ul class="tabConWrap active" data-tab="tab01-sub01">
+        <!-- 공지사항 : data-tab="tab01" -->
+        <ul class="tabConWrap active" data-tab="tab01">
           <li>
             <a href="#">
               <span class="date">12.25</span>
@@ -372,59 +346,8 @@
             </a>
           </li>
         </ul>
-        <!-- 공지사항 + 학사 : data-tab="tab01-sub02" -->
-        <ul class="tabConWrap" data-tab="tab01-sub02">
-          <li>
-            <a href="#">
-              <span class="date">12.24</span>
-              <span class="title">[학사] 2025학년도 1학기 수강신청 안내</span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <span class="date">12.18</span>
-              <span class="title">[학사] 졸업논문 제출 일정 안내</span>
-            </a>
-          </li>
-        </ul>
-        <!-- 공지사항 + 장학 : data-tab="tab01-sub03" -->
-        <ul class="tabConWrap" data-tab="tab01-sub03">
-          <li>
-            <a href="#">
-              <span class="date">12.22</span>
-              <span class="title">[장학] 2025학년도 장학금 신청 안내</span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <span class="date">12.10</span>
-              <span class="title">[장학] 성적우수 장학금 지급 안내</span>
-            </a>
-          </li>
-        </ul>
-        <!-- 공지사항 + 입시 : data-tab="tab01-sub04" -->
-        <ul class="tabConWrap" data-tab="tab01-sub04">
-          <li class="no-data">
-            <p>등록된 데이터가 없습니다.</p>
-          </li>
-        </ul>
-        <!-- 공지사항 + 취업 : data-tab="tab01-sub05" -->
-        <ul class="tabConWrap" data-tab="tab01-sub05">
-          <li>
-            <a href="#">
-              <span class="date">12.19</span>
-              <span class="title">[취업] 취업박람회 참가 안내</span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <span class="date">12.05</span>
-              <span class="title">[취업] 기업 설명회 일정 안내</span>
-            </a>
-          </li>
-        </ul>
-        <!-- 학사일정 + 일반 : data-tab="tab02-sub01" -->
-        <ul class="tabConWrap" data-tab="tab02-sub01">
+        <!-- 학사일정 : data-tab="tab02" -->
+        <ul class="tabConWrap" data-tab="tab02">
           <li>
             <a href="#">
               <span class="date">01.02</span>
@@ -437,39 +360,12 @@
               <span class="title">수강신청 기간</span>
             </a>
           </li>
-        </ul>
-        <!-- 학사일정 + 학사 : data-tab="tab02-sub02" -->
-        <ul class="tabConWrap" data-tab="tab02-sub02">
-          <li>
-            <a href="#">
-              <span class="date">02.01</span>
-              <span class="title">중간고사 기간</span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <span class="date">04.15</span>
-              <span class="title">기말고사 기간</span>
-            </a>
-          </li>
-        </ul>
-        <!-- 학사일정 + 장학 : data-tab="tab02-sub03" -->
-        <ul class="tabConWrap" data-tab="tab02-sub03">
-          <li class="no-data">
-            <p>등록된 데이터가 없습니다.</p>
-          </li>
-        </ul>
-        <!-- 학사일정 + 입시 : data-tab="tab02-sub04" -->
-        <ul class="tabConWrap" data-tab="tab02-sub04">
-          <li class="no-data">
-            <p>등록된 데이터가 없습니다.</p>
-          </li>
-        </ul>
-        <!-- 학사일정 + 취업 : data-tab="tab02-sub05" -->
-        <ul class="tabConWrap" data-tab="tab02-sub05">
-          <li class="no-data">
-            <p>등록된 데이터가 없습니다.</p>
-          </li>
+          <!-- ★ 개발: 데이터가 없을 시 아래 내용 출력해주시면 됩니다. 
+          
+            <li class="no_data">
+              <p>등록된 데이터가 없습니다.</p>
+            </li>
+          -->
         </ul>
       </div>
     </main>

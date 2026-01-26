@@ -52,7 +52,7 @@ $(document).ready(function() {
   const board = $('.board');
   if (board.length) {
     // 탭 버튼 클릭 이벤트
-    board.find('.tab_dep01 button, .tab_dep02 button').on('click', function() {
+    board.find('.tab_dep01 button').on('click', function() {
       const $button = $(this);
       const $li = $button.closest('li');
       const $ul = $li.closest('ul');
@@ -64,15 +64,11 @@ $(document).ready(function() {
       
       // 현재 선택된 탭의 data-tab-value 값 가져오기
       const dep01Value = board.find('.tab_dep01 li.active').data('tab-value');
-      const dep02Value = board.find('.tab_dep02 li.active').data('tab-value');
-      
-      // 탭 조합에 맞는 data-tab 값 생성
-      const tabKey = dep01Value + '-' + dep02Value;
       
       // 모든 tabConWrap 숨기기
       board.find('.tabConWrap').removeClass('active');
       // 해당하는 tabConWrap만 표시
-      board.find('.tabConWrap[data-tab="' + tabKey + '"]').addClass('active');
+      board.find('.tabConWrap[data-tab="' + dep01Value + '"]').addClass('active');
     });
   }
 
